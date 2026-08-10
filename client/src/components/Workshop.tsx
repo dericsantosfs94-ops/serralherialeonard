@@ -12,7 +12,6 @@ const shots = [
   { img: IMAGES.foto4, alt: "Leonardo em obra com estrutura de cobertura em execução" },
   { img: IMAGES.foto22, alt: "Portões brancos entregues na residência do cliente" },
   { img: IMAGES.portaoEntregaCaminhao, alt: "Portão preto transportado com caminhão próprio" },
-  { img: IMAGES.foto24, alt: "Montagem de pergolado branco com equipe em andaime" },
 ];
 
 export function Workshop() {

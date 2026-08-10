@@ -312,23 +312,6 @@ export const companyData: {
     },
     // ---- VIDROS / COBERTURAS / GUARDA-CORPOS ----
     {
-      id: "cobertura-laminada-1",
-      title: "Cobertura em Vidro Laminado",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: IMAGES.foto20,
-      description: "Cobertura de garagem em vidro laminado com estrutura metálica, iluminação natural e proteção UV.",
-      featured: true,
-    },
-    {
-      id: "cobertura-laminada-2",
-      title: "Pérgola de Vidro Laminado",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: IMAGES.foto21,
-      description: "Pérgola com vidro laminado sobre área de garagem, unindo elegância e segurança.",
-    },
-    {
       id: "portao-laminas-transporte",
       title: "Painéis de Portão em Transporte",
       location: "Região de Magé - RJ",
@@ -402,15 +385,6 @@ export const companyData: {
       image: IMAGES.foto4,
       description: "Divisórias de alumínio cinza em obra comercial, montadas com precisão pela equipe.",
     },
-    // REMOVIDO (redução da galeria): foto3 era menos representativa que as novas esquadrias
-    {
-      id: "cobogo-estrutura-removido",
-      title: "Estrutura de Cobogó em Alumínio",
-      location: "Magé - RJ",
-      category: "esquadrias",
-      image: IMAGES.foto3,
-      description: "Montagem de estrutura cúbica com painéis cobogó em alumínio, projeto especial sob medida.",
-    },
     // REMOVIDO (redução da galeria): foto5 já usada no About; nova esquadria entrou em seu lugar
     {
       id: "divisoria-forro-removido",
@@ -455,31 +429,6 @@ export const companyData: {
       description: "Cobertura em estrutura branca projetando a área de lazer e a piscina da residência.",
     },
     // ---- BASTIDORES / OFICINA ----
-    // REMOVIDO (redução): foto6 e foto8 eram grade e estoque de perfis — oficina real já está no Workshop e na galeria
-    {
-      id: "oficina-corte-removido",
-      title: "Corte e Preparação na Oficina",
-      location: "Oficina Leonard - Fragoso",
-      category: "bastidores",
-      image: IMAGES.foto6,
-      description: "Corte e preparação de perfis de alumínio na oficina, o começo de cada projeto.",
-    },
-    {
-      id: "oficina-perfis-removido",
-      title: "Estoque de Perfis de Alumínio",
-      location: "Oficina Leonard - Fragoso",
-      category: "bastidores",
-      image: IMAGES.foto8,
-      description: "Estoque organizado de perfis brancos prontos para fabricação sob medida.",
-    },
-    {
-      id: "instalacao-obra-removido",
-      title: "Instalação de Vidro em Obra",
-      location: "Obra em Magé - RJ",
-      category: "bastidores",
-      image: IMAGES.foto22,
-      description: "Instalação de painéis de vidro na cobertura, com equipe em andaime.",
-    },
     {
       id: "instalacao-gradil",
       title: "Instalação de Gradil em Vidro — Dia de Chuva",
@@ -503,15 +452,6 @@ export const companyData: {
       category: "bastidores",
       image: IMAGES.vidroInstalacaoObra,
       description: "Instalador com a camisa da Leonard assentando esquadria de vidro na residência do cliente, trabalho manual e preciso.",
-    },
-    // REMOVIDO (redução): foto25 duplicada com cobertura-branca-piscina; foto24 duplicada com pergolado-montagem
-    {
-      id: "obra-andaime-removido",
-      title: "Obra em Andamento",
-      location: "Obra em Magé - RJ",
-      category: "bastidores",
-      image: IMAGES.foto25,
-      description: "Acompanhamento da obra com andaimes e estrutura de vidro em execução.",
     },
     {
       id: "equipe-obra-removido",
