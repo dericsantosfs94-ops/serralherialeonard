@@ -1,0 +1,6 @@
+{
+  "name": "Vidraçaria e Serralheria Leonard",
+  "description": "Vidraçaria e Serralheria Leonard em Fragoso, Magé - RJ. Mais de 30 anos de experiência em ferro, alumínio, esquadrias, vidros, portões e box.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
