@@ -19,7 +19,7 @@ export function FloatingWhatsApp() {
         <span className="relative inline-flex w-2.5 h-2.5 rounded-full bg-[var(--gold)]" />
       </span>
       <MessageCircle className="w-5 h-5" />
-      <span className="hidden sm:inline text-[0.78rem] font-semibold tracking-[0.06em]">Fale com o Leo</span>
+      <span className="hidden sm:inline text-[0.78rem] font-semibold tracking-[0.06em]">Fale com o Leonard</span>
     </a>
   );
 }

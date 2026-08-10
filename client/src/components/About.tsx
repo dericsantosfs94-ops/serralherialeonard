@@ -1,6 +1,6 @@
 /**
  * Estilo: Esmeralda & Ouro (ideas.md)
- * Seção Sobre: mosaico editorial com fotos reais (Loja + Leo na oficina),
+ * Seção Sobre: mosaico editorial com fotos reais (Loja + Leonard na oficina),
  * história de 30 anos e pilares de confiança. Fundo carvão.
  */
 import { CheckCircle2, MapPin, Clock, ShieldCheck } from "lucide-react";
@@ -48,7 +48,7 @@ export function About() {
             <FadeUp delay={80}>
               <p className="mt-6 text-[1rem] md:text-[1.08rem] leading-relaxed text-[oklch(0.8_0.01_85)] font-light">
                 A <strong className="font-semibold text-[var(--cream)] font-normal">Vidraçaria e Serralheria Leonard</strong> nasceu e cresceu em
-                Fragoso, Magé. Há mais de 30 anos, Leonardo e sua equipe transformam
+                Fragoso, Magé. Há mais de 30 anos, Leonard e sua equipe transformam
                 ferro, alumínio e vidro em portões, coberturas, esquadrias e
                 soluções sob medida — com acabamento cuidadoso em cada projeto.
               </p>

@@ -45,7 +45,7 @@ export function Contact() {
             <span className="gold-line flex-1" />
           </div>
           <h2 className="font-display text-[2.2rem] leading-[1.1] sm:text-[3.1rem] font-semibold text-[var(--cream)] text-center">
-            O orçamento é <span className="text-[var(--gold-soft)]">gratuito</span> — e o Leo responde você mesmo.
+            O orçamento é <span className="text-[var(--gold-soft)]">gratuito</span> — e quem responde é o Leonard.
           </h2>
         </FadeUp>
 
@@ -98,7 +98,7 @@ export function Contact() {
                   Enviar orçamento pelo WhatsApp
                 </button>
                 <p className="text-center text-[0.75rem] text-[var(--smoke)]">
-                  Ao enviar, seu WhatsApp abre com a mensagem pronta para o Leonardo.
+                  Ao enviar, seu WhatsApp abre com a mensagem pronta para o Leonard.
                 </p>
               </div>
             </form>

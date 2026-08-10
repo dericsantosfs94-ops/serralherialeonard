@@ -1,6 +1,6 @@
 /**
  * Estilo: Esmeralda & Ouro (ideas.md)
- * Página única: jornada de conversão — Herói com o Leo → Sobre → Portões →
+ * Página única: jornada de conversão — Herói com o Leonard → Sobre → Portões →
  * Vidraçaria → Serviços → Projetos → Oficina → Instagram → Contato.
  */
 import { useEffect } from "react";

@@ -1,6 +1,6 @@
 /**
  * Estilo: Esmeralda & Ouro (ideas.md)
- * Hero assimétrico: texto editorial à esquerda, retrato do Leo em card
+ * Hero assimétrico: texto editorial à esquerda, retrato do Leonard em card
  * vertical com moldura dourada e selo "Fundador". Fundo textura esmeralda.
  */
 import { ArrowRight, MapPin, MessageCircle, Award } from "lucide-react";
@@ -81,14 +81,14 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Card retrato do Leo */}
+          {/* Card retrato do Leonard */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-[330px] lg:max-w-none lg:mr-0 lg:ml-auto">
               <div className="absolute -inset-1.5 border border-[var(--gold)/40%] rounded-sm" aria-hidden />
               <div className="relative photo-frame rounded-sm overflow-hidden bg-[var(--charcoal)] shadow-[0_24px_70px_rgba(0,0,0,0.55)]">
                 <img
                   src={IMAGES.owner}
-                  alt="Leonardo, fundador da Vidraçaria e Serralheria Leonard"
+                  alt="Leonard, fundador da Vidraçaria e Serralheria Leonard"
                   className="w-full h-[460px] lg:h-[540px] object-cover object-[center_28%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.15_0.04_168/0.85)] via-transparent to-transparent" />
@@ -104,7 +104,7 @@ export function Hero() {
                     "Cada portão e cada vidro que sai da minha oficina leva o meu nome."
                   </p>
                   <p className="mt-2 text-[0.72rem] tracking-[0.22em] uppercase text-[var(--gold-soft)]">
-                    Leonardo · Vidraçaria e Serralheria Leonard
+                    Leonard · Vidraçaria e Serralheria Leonard
                   </p>
                 </div>
               </div>
