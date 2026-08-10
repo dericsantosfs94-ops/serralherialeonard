@@ -36,11 +36,11 @@ export function Workshop() {
           </div>
         </FadeUp>
 
-        <div className="mt-12 flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {shots.map((s, i) => (
-            <FadeUp key={s.img} delay={i * 60} className="shrink-0 w-[260px] sm:w-[320px] snap-start">
-              <div className="photo-frame rounded-sm overflow-hidden">
-                <img src={s.img} alt={s.alt} loading="lazy" className="w-full h-[230px] sm:h-[260px] object-cover" />
+            <FadeUp key={s.img} delay={i * 60} className="w-full">
+              <div className="photo-frame rounded-sm overflow-hidden h-full">
+                <img src={s.img} alt={s.alt} loading="lazy" className="w-full h-[230px] sm:h-[260px] lg:h-[300px] object-cover" />
               </div>
             </FadeUp>
           ))}
