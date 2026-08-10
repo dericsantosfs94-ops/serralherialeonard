@@ -104,7 +104,7 @@ export function Hero() {
                     "Cada portão e cada vidro que sai da minha oficina leva o meu nome."
                   </p>
                   <p className="mt-2 text-[0.72rem] tracking-[0.22em] uppercase text-[var(--gold-soft)]">
-                    Leonard · Vidraçaria e Serralheria Leonard
+                    Leonard · Vidraçaria e Serralheria
                   </p>
                 </div>
               </div>
