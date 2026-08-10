@@ -29,7 +29,7 @@ export function About() {
                 <img
                   src={IMAGES.loja}
                   alt="Fachada da loja da Leonard em Fragoso, Magé"
-                  className="w-full h-[420px] md:h-[520px] lg:h-full object-cover"
+                  className="w-full h-[420px] md:h-[520px] lg:h-[520px] object-cover"
                 />
               </div>
               <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--gold-soft)]">Nossa loja · Fragoso, Magé - RJ</p>

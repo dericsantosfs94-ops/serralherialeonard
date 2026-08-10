@@ -11,18 +11,17 @@ import { FadeUp } from "./FadeUp";
 const categories = [
   { id: "todos", label: "Todos os projetos" },
   { id: "portoes", label: "Portões" },
-  { id: "vidros", label: "Vidros & Coberturas" },
   { id: "esquadrias", label: "Esquadrias & Divisórias" },
-  { id: "coberturas", label: "Pergolados" },
-  { id: "bastidores", label: "Oficina & Obras" },
+  { id: "coberturas", label: "Coberturas & Pergolados" },
+  { id: "fachada", label: "Nossa Loja" },
 ];
 
 const catLabel: Record<string, string> = {
   portoes: "Portões",
   vidros: "Vidros",
-  esquadrias: "Esquadrias",
-  coberturas: "Pergolados",
-  bastidores: "Bastidores",
+  esquadrias: "Esquadrias & Divisórias",
+  coberturas: "Coberturas & Pergolados",
+  bastidores: "Oficina & Obras",
   fachada: "Nossa Loja",
 };
 

@@ -17,7 +17,7 @@ export function InstagramSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <FadeUp className="lg:col-span-6">
             <div className="photo-frame gold-corner rounded-sm overflow-hidden max-w-md">
-              <img src={IMAGES.loja} alt="Fachada da Vidraçaria e Serralheria Leonard em Fragoso, Magé" className="w-full h-[340px] object-cover" />
+              <img src={IMAGES.foto13} alt="Instalação de divisória em alumínio e vidro executada pela Leonard em Magé" className="w-full h-[340px] object-cover" />
             </div>
           </FadeUp>
           <FadeUp delay={100} className="lg:col-span-6">

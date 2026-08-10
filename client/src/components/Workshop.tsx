@@ -10,10 +10,9 @@ import { FadeUp } from "./FadeUp";
 import { IMAGES } from "../data/company";
 
 const shots = [
-  { img: IMAGES.foto11, alt: "Montagem de divisória comercial em alumínio e vidro na oficina Leonard" },
-  { img: IMAGES.foto2, alt: "Esquadria preta de alumínio instalada em residência" },
-  { img: IMAGES.foto19, alt: "Portão branco de lâminas finalizado e automatizado" },
-  { img: IMAGES.foto25, alt: "Cobertura em vidro laminado com estrutura branca em fachada" },
+  { img: IMAGES.foto3, alt: "Trabalho em andamento na oficina da Vidraçaria e Serralheria Leonard" },
+  { img: IMAGES.foto12, alt: "Projeto em execução pela equipe da Leonard" },
+  { img: IMAGES.foto24, alt: "Acabamento e montagem realizados na oficina Leonard" },
 ];
 
 export function Workshop() {
