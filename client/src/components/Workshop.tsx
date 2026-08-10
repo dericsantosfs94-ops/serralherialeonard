@@ -8,7 +8,7 @@ import { IMAGES } from "../data/company";
 
 const shots = [
   { img: IMAGES.foto14, alt: "Montagem de caixilhos de alumínio na oficina Leonard" },
-  { img: IMAGES.foto5, alt: "Obra comercial com andaime e equipe em ação" },
+  { img: IMAGES.foto5, alt: "Obra interna com andaime e esquadrias em instalação" },
   { img: IMAGES.foto4, alt: "Leonardo em obra com estrutura de cobertura em execução" },
   { img: IMAGES.foto22, alt: "Portões brancos entregues na residência do cliente" },
   { img: IMAGES.portaoEntregaCaminhao, alt: "Portão preto transportado com caminhão próprio" },

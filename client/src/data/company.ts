@@ -61,6 +61,13 @@ export const IMAGES = {
   portaoMadeira2: "/manus-storage/portao_madeira_2_d077e35a.jpg",
   portaoBrancoBasculante: "/manus-storage/portao_branco_basculante_ec651362.jpg",
   portaoEntregaCaminhao: "/manus-storage/portao_entrega_caminhao_0feb3583.jpg",
+  vidroCobertura1: "/manus-storage/vidro_cobertura_1_060bff23.jpg",
+  vidroCobertura2: "/manus-storage/vidro_cobertura_2_c67bfa64.jpg",
+  vidroGuardacorpo1: "/manus-storage/vidro_guardacorpo_1_ef698bf2.jpg",
+  vidroFachadaComercial: "/manus-storage/vidro_fachada_comercial_8a93161c.jpg",
+  vidroBoxBanheiro: "/manus-storage/vidro_box_banheiro_a4236fbd.jpg",
+  vidroGuardacorpo2: "/manus-storage/vidro_guardacorpo_2_92953863.jpg",
+  vidroInstalacaoObra: "/manus-storage/vidro_instalacao_obra_84969b59.jpg",
   textureEmerald: "/manus-storage/texture_emerald_f3dec480.png",
   textureCharcoal: "/manus-storage/texture_charcoal_7f15195c.png",
 } as const;
@@ -330,15 +337,15 @@ export const companyData: {
       description: "Painéis de portão branco de lâminas transportados com segurança pela frota própria da Leonard até a obra do cliente.",
     },
     {
-      id: "cobertura-garagem",
-      title: "Cobertura de Garagem em Vidro",
+      id: "painel-vidro-obra",
+      title: "Painéis de Vidro com Esquadria Preta — Obra em Execução",
       location: "Magé - RJ",
       category: "vidros",
       image: IMAGES.foto9,
-      description: "Cobertura de garagem com estrutura de vidro e aço, acabamento escuro sofisticado.",
+      description: "Painéis de vidro temperado com esquadrias pretas instalados em obra comercial, mesmo em dia de chuva a equipe segue em campo.",
     },
     {
-      id: "divisoria-sala",
+      id: "divisoria-sala-removido",
       title: "Sala Modular com Divisórias de Alumínio",
       location: "Oficina Leonard - Fragoso",
       category: "esquadrias",
@@ -369,22 +376,7 @@ export const companyData: {
       image: IMAGES.foto27,
       description: "Guarda-corpo de vidro com corrimão inox ao longo de escada interna, acabamento impecável.",
     },
-    {
-      id: "guarda-corpo-inox-1",
-      title: "Guarda-Corpo com Corrimão Inox",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: IMAGES.foto6,
-      description: "Guarda-corpo em vidro com ferragens e corrimão inox em escada residencial de arquitetura moderna.",
-    },
-    {
-      id: "guarda-corpo-inox-2",
-      title: "Escada com Guarda-Corpo em Inox Escuro",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: IMAGES.foto8,
-      description: "Guarda-corpo com estrutura em inox escuro acompanhando a escada, fixação precisa ponto a ponto.",
-    },
+    // (dois guarda-corpos anteriores removidos por usarem fotos de perfis/oficina)
     // ---- ESQUADRIAS / DIVISÓRIAS ----
     {
       id: "esquadria-preta",
@@ -410,16 +402,18 @@ export const companyData: {
       image: IMAGES.foto4,
       description: "Divisórias de alumínio cinza em obra comercial, montadas com precisão pela equipe.",
     },
+    // REMOVIDO (redução da galeria): foto3 era menos representativa que as novas esquadrias
     {
-      id: "cobogo-estrutura",
+      id: "cobogo-estrutura-removido",
       title: "Estrutura de Cobogó em Alumínio",
       location: "Magé - RJ",
       category: "esquadrias",
       image: IMAGES.foto3,
       description: "Montagem de estrutura cúbica com painéis cobogó em alumínio, projeto especial sob medida.",
     },
+    // REMOVIDO (redução da galeria): foto5 já usada no About; nova esquadria entrou em seu lugar
     {
-      id: "divisoria-forro",
+      id: "divisoria-forro-removido",
       title: "Divisória e Revestimento Interno",
       location: "Magé - RJ",
       category: "esquadrias",
@@ -427,22 +421,22 @@ export const companyData: {
       description: "Revestimento e divisória interna em obra, com acabamento limpo e nivelado.",
     },
     // ---- COBERTURAS / PERGOLADOS ----
+    // REMOVIDO (redução da galeria): foto23 era montagem de pergolado duplicada pela cobertura de vidro nova
     {
-      id: "carport-vidro",
-      title: "Cobertura de Vidro em Carport",
-      location: "Magé - RJ",
-      category: "coberturas",
-      image: IMAGES.foto9,
-      description: "Cobertura de vidro com estrutura escura projetando a garagem residencial com elegância.",
-      featured: true,
-    },
-    {
-      id: "pergolado-amadeirado",
+      id: "pergolado-amadeirado-removido",
       title: "Pergolado Amadeirado Instalado",
       location: "Magé - RJ",
       category: "coberturas",
       image: IMAGES.foto23,
       description: "Pergolado em estrutura amadeirada com cobertura de policarbonato instalado na fachada da residência.",
+    },
+    {
+      id: "divisoria-oficina-2",
+      title: "Divisórias com Vidro em Fase de Instalação",
+      location: "Oficina Leonard - Fragoso",
+      category: "esquadrias",
+      image: IMAGES.foto11,
+      description: "Divisórias com painéis de vidro e alumínio na fase final de montagem, com equipe em campo.",
     },
     {
       id: "pergolado-montagem",
@@ -461,8 +455,9 @@ export const companyData: {
       description: "Cobertura em estrutura branca projetando a área de lazer e a piscina da residência.",
     },
     // ---- BASTIDORES / OFICINA ----
+    // REMOVIDO (redução): foto6 e foto8 eram grade e estoque de perfis — oficina real já está no Workshop e na galeria
     {
-      id: "oficina-corte",
+      id: "oficina-corte-removido",
       title: "Corte e Preparação na Oficina",
       location: "Oficina Leonard - Fragoso",
       category: "bastidores",
@@ -470,7 +465,7 @@ export const companyData: {
       description: "Corte e preparação de perfis de alumínio na oficina, o começo de cada projeto.",
     },
     {
-      id: "oficina-perfis",
+      id: "oficina-perfis-removido",
       title: "Estoque de Perfis de Alumínio",
       location: "Oficina Leonard - Fragoso",
       category: "bastidores",
@@ -478,7 +473,7 @@ export const companyData: {
       description: "Estoque organizado de perfis brancos prontos para fabricação sob medida.",
     },
     {
-      id: "instalacao-obra",
+      id: "instalacao-obra-removido",
       title: "Instalação de Vidro em Obra",
       location: "Obra em Magé - RJ",
       category: "bastidores",
@@ -502,15 +497,16 @@ export const companyData: {
       description: "Portão entregue e instalado na residência do cliente, com ajustes finos feitos pela equipe.",
     },
     {
-      id: "instalacao-vidro",
-      title: "Assentamento de Esquadria em Vidro",
+      id: "instalacao-obra-bastidor",
+      title: "Instalador da Leonard em Campo",
       location: "Obra em Magé - RJ",
       category: "bastidores",
-      image: IMAGES.foto23,
-      description: "Assentamento de esquadria com vidro, trabalho manual e preciso.",
+      image: IMAGES.vidroInstalacaoObra,
+      description: "Instalador com a camisa da Leonard assentando esquadria de vidro na residência do cliente, trabalho manual e preciso.",
     },
+    // REMOVIDO (redução): foto25 duplicada com cobertura-branca-piscina; foto24 duplicada com pergolado-montagem
     {
-      id: "obra-andaime",
+      id: "obra-andaime-removido",
       title: "Obra em Andamento",
       location: "Obra em Magé - RJ",
       category: "bastidores",
@@ -518,7 +514,7 @@ export const companyData: {
       description: "Acompanhamento da obra com andaimes e estrutura de vidro em execução.",
     },
     {
-      id: "equipe-obra",
+      id: "equipe-obra-removido",
       title: "O Leo na Obra",
       location: "Obra em Magé - RJ",
       category: "bastidores",
