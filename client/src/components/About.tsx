@@ -22,27 +22,17 @@ export function About() {
         </FadeUp>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start">
-          {/* Mosaico de fotos */}
-          <div className="lg:col-span-5 grid grid-cols-2 gap-4">
-            <FadeUp className="col-span-2">
+          {/* Foto única da loja */}
+          <div className="lg:col-span-5">
+            <FadeUp>
               <div className="photo-frame gold-corner rounded-sm overflow-hidden bg-[oklch(0.16_0.006_70)] border border-[oklch(0.72_0.11_85/0.15%)]">
                 <img
                   src={IMAGES.loja}
                   alt="Fachada da loja da Leonard em Fragoso, Magé"
-                  className="w-full h-56 md:h-64 object-cover"
+                  className="w-full h-[420px] md:h-[520px] lg:h-full object-cover"
                 />
               </div>
               <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--gold-soft)]">Nossa loja · Fragoso, Magé - RJ</p>
-            </FadeUp>
-            <FadeUp delay={80} className="col-span-1 mt-4">
-              <div className="photo-frame rounded-sm overflow-hidden">
-                <img src={IMAGES.foto7} alt="Leonardo na oficina com perfis de alumínio" className="w-full h-44 object-cover" />
-              </div>
-            </FadeUp>
-            <FadeUp delay={150} className="col-span-1 mt-10">
-              <div className="photo-frame rounded-sm overflow-hidden">
-                <img src={IMAGES.foto2} alt="Leonardo em obra com estrutura metálica" className="w-full h-44 object-cover" />
-              </div>
             </FadeUp>
           </div>
 

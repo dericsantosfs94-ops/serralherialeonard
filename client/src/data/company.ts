@@ -24,7 +24,7 @@ export interface PortfolioItem {
 
 export const IMAGES = {
   owner: "/manus-storage/5174908402084285518_556bb897.jpg",
-  loja: "/manus-storage/foto_1_2fa9a0d5.jpg",
+  loja: "/manus-storage/loja_nova_6b6b7ae9.jpg",
   foto2: "/manus-storage/foto_2_4c0a738c.jpg",
   foto3: "/manus-storage/foto_3_cbe3f7e6.jpg",
   foto4: "/manus-storage/foto_4_cb5f29e2.jpg",
