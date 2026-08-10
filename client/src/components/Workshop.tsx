@@ -2,16 +2,18 @@
  * Estilo: Esmeralda & Ouro (ideas.md)
  * Oficina & Bastidores: faixa de fotos reais da equipe em ação,
  * com texto pessoal do fundador. Fundo esmeralda.
+ * 
+ * AUDITORIA 2026: Removidas imagens com problemas de enquadramento.
+ * Mantidas apenas as que mostram trabalho profissional e acabamento.
  */
 import { FadeUp } from "./FadeUp";
 import { IMAGES } from "../data/company";
 
 const shots = [
-  { img: IMAGES.foto14, alt: "Montagem de caixilhos de alumínio na oficina Leonard" },
-  { img: IMAGES.foto5, alt: "Obra interna com andaime e esquadrias em instalação" },
-  { img: IMAGES.foto4, alt: "Leonardo em obra com estrutura de cobertura em execução" },
-  { img: IMAGES.foto22, alt: "Portões brancos entregues na residência do cliente" },
-  { img: IMAGES.portaoEntregaCaminhao, alt: "Portão preto transportado com caminhão próprio" },
+  { img: IMAGES.foto11, alt: "Montagem de divisória comercial em alumínio e vidro na oficina Leonard" },
+  { img: IMAGES.foto2, alt: "Esquadria preta de alumínio instalada em residência" },
+  { img: IMAGES.foto19, alt: "Portão branco de lâminas finalizado e automatizado" },
+  { img: IMAGES.foto25, alt: "Cobertura em vidro laminado com estrutura branca em fachada" },
 ];
 
 export function Workshop() {

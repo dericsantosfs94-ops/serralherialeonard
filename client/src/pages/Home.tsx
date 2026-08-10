@@ -67,13 +67,24 @@ export default function Home() {
           anchor="vidracaria"
           tone="charcoal"
           reversed
-          eyebrow="Vidraçaria & Coberturas"
+          eyebrow="Esquadrias & Divisórias"
+          title="Alumínio e vidro que "
+          titleAccent="organizam espaços"
+          description="Esquadrias de correr, divisórias comerciais e painéis em alumínio e vidro. Soluções sob medida que maximizam funcionalidade e elegância."
+          items={companyData.portfolio.filter((p) => p.category === "esquadrias")}
+          ctaLabel="Orçar meu projeto"
+          ctaMsg="Olá! Vim pelo site da Leonard e gostaria de solicitar um orçamento para esquadrias ou divisórias."
+        />
+        <CategoryChapter
+          anchor="coberturas"
+          tone="emerald"
+          eyebrow="Coberturas & Pergolados"
           title="Vidro laminado que une "
           titleAccent="luz e segurança"
-          description="Coberturas e pérgolas em vidro laminado, guarda-corpos com corrimão inox e box para banheiro. Claridade natural sem abrir mão da proteção."
-          items={companyData.portfolio.filter((p) => p.category === "vidros")}
-          ctaLabel="Orçar meu projeto em vidro"
-          ctaMsg="Olá! Vim pelo site da Leonard e gostaria de solicitar um orçamento para um serviço de vidros."
+          description="Coberturas e pérgolas em vidro laminado com estrutura em alumínio branco. Claridade natural, proteção solar e acabamento sofisticado para sua fachada."
+          items={companyData.portfolio.filter((p) => p.category === "coberturas")}
+          ctaLabel="Orçar minha cobertura"
+          ctaMsg="Olá! Vim pelo site da Leonard e gostaria de solicitar um orçamento para uma cobertura em vidro."
         />
         <Services />
         <Projects />

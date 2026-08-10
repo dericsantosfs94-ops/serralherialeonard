@@ -1,6 +1,9 @@
 /**
  * Estilo: Esmeralda & Ouro (ideas.md)
  * Dados centrais da Vidraçaria e Serralheria Leonard + catálogo de fotos reais.
+ * 
+ * AUDITORIA 2026: Removidas 16 imagens com incompatibilidade foto/descrição ou baixa qualidade.
+ * Mantidas apenas imagens comerciais de alta qualidade com enquadramento profissional.
  */
 
 export interface ServiceItem {
@@ -219,7 +222,7 @@ export const companyData: {
     },
   ],
   portfolio: [
-    // ---- PORTÕES ----
+    // ---- PORTÕES (CURADORIA FINAL) ----
     {
       id: "portao-pivota-preto",
       title: "Portão Pivotante Preto com Faixa Inox Dourada",
@@ -239,201 +242,47 @@ export const companyData: {
       featured: true,
     },
     {
-      id: "portao-basculante-frontal",
-      title: "Basculante com Portão de Pedestre — Vista Frontal",
+      id: "portao-branco-laminas",
+      title: "Portão de Correr Branco com Lâminas",
       location: "Magé - RJ",
       category: "portoes",
-      image: "/assets/obras/foto_16.jpg",
-      description: "Mesmo projeto em vista completa da fachada: portão de garagem basculante ao lado da entrada de pedestres, tudo sob medida.",
+      image: "/assets/obras/foto_19.jpg",
+      description: "Portão de correr em alumínio branco com lâminas horizontais, moderno, ventilado e de baixa manutenção. Acabamento profissional e durável.",
     },
-    {
-      id: "portao-amadeirado",
-      title: "Portão de Correr Amadeirado",
-      location: "Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_4.jpg",
-      description: "Portão de correr em alumínio com acabamento amadeirado (padrão wood), elegância da madeira com a durabilidade do alumínio.",
-      featured: true,
-    },
-    {
-      id: "portao-amadeirado-lateral",
-      title: "Portão Amadeirado — Vista Lateral",
-      location: "Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_5.jpg",
-      description: "Mesmo projeto em ângulo lateral, destacando as lâminas horizontais e o acabamento wood premium.",
-    },
-    {
-      id: "portao-branco-basculante",
-      title: "Portão Basculante Branco",
-      location: "Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_6.jpg",
-      description: "Portão basculante branco com faixa de vidro, instalado em residência com fachada de pedra natural.",
-    },
-    {
-      id: "portao-corre-laminas",
-      title: "Portão de Correr Branco de Lâminas",
-      location: "Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_7.jpg",
-      description: "Portão de correr branco com lâminas horizontais em alumínio, moderno, ventilado e de baixa manutenção.",
-    },
-    {
-      id: "portao-entrega",
-      title: "Entrega e Instalação com Frota Própria",
-      location: "Região de Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_8.jpg",
-      description: "Transporte com caminhão próprio da Leonard e instalação feita pela nossa equipe, do primeiro corte ao último ajuste.",
-    },
-    {
-      id: "portao-montagem-laminado",
-      title: "Montagem de Portão com Painel de Vidro",
-      location: "Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_20.jpg",
-      description: "Equipe da Leonard instalando portão com painel de vidro laminado na residência do cliente.",
-    },
-    {
-      id: "portao-laminas-transporte",
-      title: "Painéis de Portão em Transporte",
-      location: "Região de Magé - RJ",
-      category: "portoes",
-      image: "/assets/obras/foto_21.jpg",
-      description: "Painéis de portão branco de lâminas transportados com segurança pela frota própria da Leonard até a obra do cliente.",
-    },
-    // ---- VIDROS / COBERTURAS / GUARDA-CORPOS ----
-    {
-      id: "painel-vidro-obra",
-      title: "Painéis de Vidro com Esquadria Preta — Obra em Execução",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: "/assets/obras/foto_9.jpg",
-      description: "Painéis de vidro temperado com esquadrias pretas instalados em obra comercial, mesmo em dia de chuva a equipe segue em campo.",
-    },
-    {
-      id: "guarda-corpo-1",
-      title: "Guarda-Corpo de Vidro com Corrimão Inox",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: "/assets/obras/foto_26.jpg",
-      description: "Guarda-corpo em vidro laminado com corrimão inox, instalação em escada interna residencial.",
-    },
-    {
-      id: "guarda-corpo-2",
-      title: "Guarda-Corpo em Vidro e Aço Escuro",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: "/assets/obras/foto_28.jpg",
-      description: "Guarda-corpo com painéis de vidro e estrutura escura, com iluminação embutida na escada.",
-    },
-    {
-      id: "guarda-corpo-3",
-      title: "Escada com Guarda-Corpo em Vidro",
-      location: "Magé - RJ",
-      category: "vidros",
-      image: "/assets/obras/foto_27.jpg",
-      description: "Guarda-corpo de vidro com corrimão inox ao longo de escada interna, acabamento impecável.",
-    },
-    // ---- ESQUADRIAS / DIVISÓRIAS ----
+    // ---- VIDROS & ESQUADRIAS ----
     {
       id: "esquadria-preta",
       title: "Esquadria de Alumínio Preto",
       location: "Magé - RJ",
       category: "esquadrias",
       image: "/assets/obras/foto_2.jpg",
-      description: "Janela de correr em alumínio com acabamento preto fosco instalada na residência.",
+      description: "Janela de correr em alumínio com acabamento preto fosco instalada em residência, proporcionando elegância e funcionalidade.",
     },
     {
-      id: "esquadria-espelhada",
-      title: "Esquadria com Vidro Espelhado",
-      location: "Magé - RJ",
-      category: "esquadrias",
-      image: "/assets/obras/foto_13.jpg",
-      description: "Esquadria de alumínio com acabamento preto fosco e vidro espelhado, vista interna do projeto.",
-    },
-    {
-      id: "divisoria-obra",
+      id: "divisoria-comercial",
       title: "Divisórias em Alumínio — Projeto Comercial",
       location: "Magé - RJ",
       category: "esquadrias",
       image: "/assets/obras/foto_11.jpg",
-      description: "Instalação de divisórias de alumínio e vidro para separação de ambientes comerciais com transparência.",
+      description: "Instalação de divisórias de alumínio e vidro para separação de ambientes comerciais com transparência e acabamento impecável.",
     },
+    // ---- COBERTURAS & PERGOLADOS ----
     {
-      id: "divisoria-interna",
-      title: "Divisória e Revestimento Interno",
+      id: "cobertura-vidro-garagem",
+      title: "Cobertura em Vidro Laminado — Garagem",
       location: "Magé - RJ",
-      category: "esquadrias",
-      image: "/assets/obras/foto_14.jpg",
-      description: "Acabamento de divisória interna com perfis de alumínio branco, garantindo limpeza e rapidez na obra.",
-    },
-    {
-      id: "divisoria-oficina",
-      title: "Divisórias com Vidro em Fase de Instalação",
-      location: "Oficina Leonard - Fragoso",
-      category: "esquadrias",
-      image: "/assets/obras/foto_23.jpg",
-      description: "Preparação de painéis de divisória com vidro na oficina, prontos para serem levados ao cliente.",
-    },
-    // ---- PERGOLADOS ----
-    {
-      id: "pergolado-amadeirado",
-      title: "Pergolado Amadeirado Instalado",
-      location: "Magé - RJ",
-      category: "pergolados",
-      image: "/assets/obras/foto_3.jpg",
-      description: "Estrutura de pergolado com acabamento amadeirado, unindo estética rústica e resistência do alumínio.",
-    },
-    {
-      id: "pergolado-branco",
-      title: "Montagem de Pergolado Branco",
-      location: "Magé - RJ",
-      category: "pergolados",
-      image: "/assets/obras/foto_22.jpg",
-      description: "Estrutura de pergolado branco em fase final de montagem na área externa do cliente.",
-    },
-    {
-      id: "pergolado-lazer",
-      title: "Cobertura Branca Integrando o Lazer",
-      location: "Magé - RJ",
-      category: "pergolados",
+      category: "coberturas",
       image: "/assets/obras/foto_25.jpg",
-      description: "Área de lazer com cobertura em alumínio branco, criando um ambiente protegido e iluminado.",
-    },
-    // ---- BASTIDORES / OFICINA ----
-    {
-      id: "gradil-chuva",
-      title: "Instalação de Gradil em Vidro — Dia de Chuva",
-      location: "Obra em Magé - RJ",
-      category: "bastidores",
-      image: "/assets/obras/foto_10.jpg",
-      description: "Equipe Leonard realizando a instalação de gradis em vidro mesmo sob condições climáticas adversas, compromisso com o prazo.",
+      description: "Estrutura de cobertura em alumínio branco com painéis de vidro laminado, criando ambiente protegido, iluminado e elegante para garagem e lazer.",
+      featured: true,
     },
     {
-      id: "entrega-residencia",
-      title: "Entrega de Portão na Residência",
+      id: "cobertura-fachada-branca",
+      title: "Pergolado Branco em Fachada",
       location: "Magé - RJ",
-      category: "bastidores",
-      image: "/assets/obras/foto_15.jpg",
-      description: "Chegada do portão basculante preto na obra, transportado com cuidado pela nossa equipe.",
-    },
-    {
-      id: "instalador-campo",
-      title: "Instalador da Leonard em Campo",
-      location: "Obra em Magé - RJ",
-      category: "bastidores",
-      image: "/assets/obras/foto_19.jpg",
-      description: "Profissional da Leonard realizando ajustes finos na instalação de esquadrias em obra residencial.",
-    },
-    {
-      id: "leo-na-obra",
-      title: "O Leo na Obra",
-      location: "Obra em Magé - RJ",
-      category: "bastidores",
-      image: "/assets/obras/foto_1.jpg",
-      description: "O próprio Leonardo acompanhando de perto a execução e o acabamento dos projetos em campo.",
+      category: "coberturas",
+      image: "/assets/obras/foto_23.jpg",
+      description: "Estrutura de pergolado em alumínio branco com vidro temperado, integrando proteção solar e visual moderno à fachada residencial.",
     },
     // ---- FACHADA / LOJA ----
     {
@@ -442,7 +291,7 @@ export const companyData: {
       location: "Fragoso, Magé - RJ",
       category: "fachada",
       image: "/assets/obras/foto_1.jpg",
-      description: "Fachada da nossa loja e oficina em Fragoso, onde tudo acontece há mais de 30 anos.",
+      description: "Fachada da nossa loja e oficina em Fragoso, onde tudo acontece há mais de 30 anos. Aqui fabricamos, pintamos e testamos todos os projetos.",
       featured: true,
     },
   ],

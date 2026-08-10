@@ -1,6 +1,9 @@
 /**
  * Estilo: Esmeralda & Ouro (ideas.md)
- * Faixa Instagram com foto real do Leo na obra, fundo esmeralda profundo.
+ * Faixa Instagram com foto real da loja, fundo esmeralda profundo.
+ * 
+ * AUDITORIA 2026: Substituída imagem de bastidor por foto institucional da loja,
+ * alinhando com direção mais profissional e focada em conversão.
  */
 import { Instagram, ArrowRight } from "lucide-react";
 import { companyData, IMAGES } from "../data/company";
@@ -14,7 +17,7 @@ export function InstagramSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <FadeUp className="lg:col-span-6">
             <div className="photo-frame gold-corner rounded-sm overflow-hidden max-w-md">
-              <img src={IMAGES.foto24} alt="Leonardo acompanhando uma obra" className="w-full h-[340px] object-cover" />
+              <img src={IMAGES.loja} alt="Fachada da Vidraçaria e Serralheria Leonard em Fragoso, Magé" className="w-full h-[340px] object-cover" />
             </div>
           </FadeUp>
           <FadeUp delay={100} className="lg:col-span-6">
@@ -23,8 +26,8 @@ export function InstagramSection() {
               Novos projetos toda semana <span className="text-[var(--gold-soft)]">no Instagram</span>
             </h2>
             <p className="mt-5 text-[1.02rem] text-[oklch(0.8_0.01_85)] font-light leading-relaxed">
-              Obras em andamento, bastidores da oficina e entregas. Siga a
-              Leonard e veja o trabalho acontecer antes mesmo do acabamento final.
+              Conheça os projetos finalizados, a estrutura da nossa oficina e o
+              compromisso da Leonard com a qualidade em cada detalhe.
             </p>
             <a
               href={companyData.instagramUrl}
