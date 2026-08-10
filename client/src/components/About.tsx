@@ -54,7 +54,9 @@ export function About() {
               </p>
               <p className="mt-4 text-[1rem] md:text-[1.08rem] leading-relaxed text-[oklch(0.68_0.008_80)] font-light">
                 Atendemos residências, comércios e obras em toda a região de
-                Magé - RJ, do orçamento ao acabamento final.
+                Magé - RJ, do orçamento ao acabamento final. Todas as fotos
+                deste site são de projetos reais, fabricados e instalados pela
+                nossa equipe.
               </p>
             </FadeUp>
 

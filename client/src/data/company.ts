@@ -284,15 +284,13 @@ export const companyData: {
       image: "/assets/obras/foto_23.jpg",
       description: "Estrutura de pergolado em alumínio branco com vidro temperado, integrando proteção solar e visual moderno à fachada residencial.",
     },
-    // ---- FACHADA / LOJA ----
     {
-      id: "nossa-loja",
-      title: "Nossa Loja em Fragoso",
-      location: "Fragoso, Magé - RJ",
-      category: "fachada",
-      image: "/assets/obras/foto_1.jpg",
-      description: "Fachada da nossa loja e oficina em Fragoso, onde tudo acontece há mais de 30 anos. Aqui fabricamos, pintamos e testamos todos os projetos.",
-      featured: true,
+      id: "cobertura-garagem",
+      title: "Cobertura de Garagem",
+      location: "Magé - RJ",
+      category: "coberturas",
+      image: "/assets/obras/foto_26.jpg",
+      description: "Cobertura de garagem executada sob medida, com estrutura resistente e acabamento que protege e valoriza o imóvel.",
     },
   ],
 };

@@ -13,7 +13,6 @@ const navLinks = [
   { name: "Portões", href: "#portoes" },
   { name: "Vidraçaria", href: "#vidracaria" },
   { name: "Serviços", href: "#servicos" },
-  { name: "Projetos", href: "#projetos" },
   { name: "Contato", href: "#contato" },
 ];
 

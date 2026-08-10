@@ -9,7 +9,6 @@ import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { CategoryChapter } from "../components/CategoryChapter";
 import { Services } from "../components/Services";
-import { Projects } from "../components/Projects";
 import { Workshop } from "../components/Workshop";
 import { InstagramSection } from "../components/InstagramSection";
 import { Contact } from "../components/Contact";
@@ -87,7 +86,6 @@ export default function Home() {
           ctaMsg="Olá! Vim pelo site da Leonard e gostaria de solicitar um orçamento para uma cobertura em vidro."
         />
         <Services />
-        <Projects />
         <Workshop />
         <InstagramSection />
         <Contact />
