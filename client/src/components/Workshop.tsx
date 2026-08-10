@@ -7,12 +7,12 @@ import { FadeUp } from "./FadeUp";
 import { IMAGES } from "../data/company";
 
 const shots = [
-  { img: IMAGES.foto6, alt: "Corte de perfis de alumínio na oficina" },
-  { img: IMAGES.foto8, alt: "Estoque de perfis prontos para fabricação" },
-  { img: IMAGES.foto22, alt: "Instalação de vidro em cobertura" },
-  { img: IMAGES.foto23, alt: "Assentamento de esquadria com vidro" },
-  { img: IMAGES.foto24, alt: "Leonardo acompanhando a obra" },
-  { img: IMAGES.foto25, alt: "Obra em andamento com andaimes" },
+  { img: IMAGES.foto14, alt: "Montagem de caixilhos de alumínio na oficina Leonard" },
+  { img: IMAGES.foto5, alt: "Obra comercial com andaime e equipe em ação" },
+  { img: IMAGES.foto4, alt: "Leonardo em obra com estrutura de cobertura em execução" },
+  { img: IMAGES.foto22, alt: "Portões brancos entregues na residência do cliente" },
+  { img: IMAGES.portaoEntregaCaminhao, alt: "Portão preto transportado com caminhão próprio" },
+  { img: IMAGES.foto24, alt: "Montagem de pergolado branco com equipe em andaime" },
 ];
 
 export function Workshop() {
