@@ -83,16 +83,15 @@ export function CategoryChapter({
               <div className="photo-frame gold-corner rounded-sm overflow-hidden bg-[oklch(0.16_0.006_70)]">
                 <div className="relative">
                   <img src={big.image} alt={big.title} className="w-full h-[300px] sm:h-[420px] object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.14_0.02_168/0.75)] via-transparent to-transparent" />
-                  <div className="absolute bottom-0 inset-x-0 p-6">
-                    <span className="eyebrow !text-[0.6rem]">{catLabel[big.category] ?? big.category}</span>
-                    <h3 className="mt-1.5 font-display text-[1.5rem] md:text-[1.75rem] font-semibold text-[var(--cream)]">{big.title}</h3>
-                    <p className="mt-1 text-[0.85rem] text-[oklch(0.82_0.01_90)] font-light">{big.description}</p>
-                  </div>
                   <span className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.16_0.04_168/0.85)] backdrop-blur border border-[var(--gold)/35%] text-[0.6rem] tracking-[0.2em] uppercase text-[var(--gold-soft)] rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Ver detalhes <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>
+              </div>
+              <div className="mt-3.5 pr-1">
+                <span className="eyebrow !text-[0.6rem]">{catLabel[big.category] ?? big.category}</span>
+                <h3 className="mt-1.5 font-display text-[1.5rem] md:text-[1.75rem] font-semibold text-[var(--cream)] group-hover:text-[var(--gold-soft)] transition-colors">{big.title}</h3>
+                <p className="mt-1 text-[0.85rem] text-[oklch(0.82_0.01_90)] font-light">{big.description}</p>
               </div>
             </button>
           </FadeUp>
@@ -120,7 +119,7 @@ export function CategoryChapter({
           onClick={() => setActive(null)}
         >
           <div
-            className="relative max-w-4xl w-full max-h-[90svh] bg-[var(--charcoal)] border border-[var(--gold)/30%] rounded-sm overflow-hidden grid md:grid-cols-[1.4fr_1fr]"
+            className="relative max-w-4xl w-full max-h-[90svh] bg-[var(--charcoal)] border border-[var(--gold)/30%] rounded-sm overflow-y-auto grid md:grid-cols-[1.4fr_1fr]"
             onClick={(e) => e.stopPropagation()}
           >
             <button

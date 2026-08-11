@@ -85,21 +85,22 @@ export function Hero() {
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-[330px] lg:max-w-none lg:mr-0 lg:ml-auto">
               <div className="absolute -inset-1.5 border border-[var(--gold)/40%] rounded-sm" aria-hidden />
-              <div className="relative photo-frame rounded-sm overflow-hidden bg-[var(--charcoal)] shadow-[0_24px_70px_rgba(0,0,0,0.55)]">
-                <img
-                  src={IMAGES.owner}
-                  alt="Leonard, fundador da Vidraçaria e Serralheria Leonard"
-                  className="w-full h-[460px] lg:h-[540px] object-cover object-[center_28%]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.15_0.04_168/0.85)] via-transparent to-transparent" />
+              <div className="relative photo-frame rounded-sm bg-[var(--charcoal)] shadow-[0_24px_70px_rgba(0,0,0,0.55)]">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={IMAGES.owner}
+                    alt="Leonard, fundador da Vidraçaria e Serralheria Leonard"
+                    className="w-full h-[460px] lg:h-[540px] object-cover object-[center_28%]"
+                  />
 
-                {/* Selo fundador */}
-                <div className="absolute top-5 left-5 inline-flex items-center gap-2 px-3.5 py-1.5 bg-[oklch(0.16_0.04_168/0.82)] backdrop-blur-md border border-[var(--gold)/40%] rounded-sm">
-                  <img src={IMAGES.logo} alt="" className="w-5 h-5 object-contain" />
-                  <span className="eyebrow !text-[0.58rem]">Fundador &amp; Mestre Serralheiro</span>
+                  {/* Selo fundador */}
+                  <div className="absolute top-5 left-5 inline-flex items-center gap-2 px-3.5 py-1.5 bg-[oklch(0.16_0.04_168/0.82)] backdrop-blur-md border border-[var(--gold)/40%] rounded-sm">
+                    <img src={IMAGES.logo} alt="" className="w-5 h-5 object-contain" />
+                    <span className="eyebrow !text-[0.58rem]">Fundador &amp; Mestre Serralheiro</span>
+                  </div>
                 </div>
 
-                <div className="absolute bottom-0 inset-x-0 p-6">
+                <div className="p-6 border-t border-[var(--gold)/15%]">
                   <p className="font-display text-xl md:text-[1.35rem] leading-snug text-[var(--cream)] italic">
                     "Cada portão e cada vidro que sai da minha oficina leva o meu nome."
                   </p>
