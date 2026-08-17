@@ -16,7 +16,7 @@ export function InstagramSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <FadeUp className="lg:col-span-6">
             <div className="photo-frame gold-corner rounded-sm overflow-hidden max-w-md">
-              <img src={IMAGES.foto13} alt="Instalação de divisória em alumínio e vidro executada pela Leonard em Magé" className="w-full h-[340px] object-cover" />
+              <img src={IMAGES.fotoOficina} alt="Leonard na oficina ao lado de uma estrutura de portão em fabricação" className="w-full aspect-[14/9] object-cover object-[center_48%]" />
             </div>
           </FadeUp>
           <FadeUp delay={100} className="lg:col-span-6">
@@ -32,7 +32,7 @@ export function InstagramSection() {
               href={companyData.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-3 px-7 py-4 border border-[var(--emerald-deep)]/28% text-[var(--foreground)] hover:bg-[var(--gold)] hover:border-[var(--gold)] hover:text-[oklch(0.18_0.04_168)] font-semibold tracking-[0.08em] uppercase text-sm rounded-sm transition-all duration-300 active:scale-[0.97]"
+              className="mt-8 inline-flex items-center gap-3 px-7 py-4 border border-[var(--emerald-deep)]/28% text-[var(--foreground)] hover:bg-[var(--leonard)] hover:border-[var(--leonard)] hover:text-[oklch(0.18_0.04_168)] font-semibold tracking-[0.08em] uppercase text-sm rounded-sm transition-all duration-300 active:scale-[0.97]"
             >
               <Instagram className="w-5 h-5" />
               Seguir {companyData.instagramHandle}

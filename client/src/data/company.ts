@@ -57,6 +57,7 @@ export const IMAGES = {
   foto27: "/assets/obras/foto_27.jpg",
   foto28: "/assets/obras/foto_28.jpg",
   logo: "/assets/logo-512.png",
+  fotoOficina: "/assets/brand/oficina-instagram.jpg",
   textureEmerald: "/assets/texture_emerald_preview.png",
   textureCharcoal: "/assets/texture_charcoal_preview.png",
 } as const;
