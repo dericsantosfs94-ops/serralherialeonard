@@ -53,7 +53,9 @@
   --color-leonard-dark: var(--leonard-dark);
   --color-leonard-light: var(--leonard-light);
   --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
   --color-gold-soft: var(--gold-soft);
+  --color-gold-tint: var(--gold-tint);
   --color-cream: var(--cream);
   --color-charcoal: var(--charcoal);
   --color-smoke: var(--smoke);
@@ -69,8 +71,10 @@
   --leonard: oklch(0.62 0.15 150);
   --leonard-dark: oklch(0.5 0.13 152);
   --leonard-light: oklch(0.72 0.13 150);
-  --gold: oklch(0.72 0.11 85);
-  --gold-soft: oklch(0.8 0.09 90);
+  --gold: oklch(0.66 0.12 82);
+  --gold-deep: oklch(0.46 0.09 78);
+  --gold-soft: oklch(0.77 0.1 88);
+  --gold-tint: oklch(0.95 0.035 88);
   --cream: oklch(0.955 0.012 90);
   --charcoal: oklch(0.2 0.006 70);
   --smoke: oklch(0.48 0.014 150);
@@ -182,6 +186,51 @@
   }
   .photo-frame {
     position: relative;
+  }
+  .service-card {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.45s ease, border-color 0.35s ease;
+  }
+  .service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.7;
+    transition: opacity 0.35s ease, transform 0.45s ease;
+    transform: scaleX(0.35);
+    transform-origin: center;
+    z-index: -1;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px oklch(0.28 0.04 78 / 0.14);
+  }
+  .service-card:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  .service-icon {
+    transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.35s ease, color 0.35s ease;
+  }
+  .service-card:hover .service-icon {
+    transform: translateY(-2px) rotate(-3deg);
+    background: var(--gold);
+    color: var(--foreground);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .service-card,
+    .service-icon,
+    .service-card::before {
+      transition: none;
+    }
+    .service-card:hover,
+    .service-card:hover .service-icon {
+      transform: none;
+    }
   }
   .photo-frame img {
     transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1), filter 0.5s ease;
