@@ -12,9 +12,6 @@ export function Hero() {
       id="inicio"
       className="relative min-h-[100svh] flex items-center pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-[var(--background)]"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,oklch(0.86_0.055_150/0.32),transparent_34%),linear-gradient(135deg,oklch(0.985_0.008_90),oklch(0.945_0.018_90))]" />
-      <div className="absolute -top-24 -right-32 w-[480px] h-[480px] rounded-full bg-[var(--leonard)]/10 blur-[120px]" />
-      <div className="absolute left-0 bottom-0 h-px w-2/3 bg-gradient-to-r from-[var(--leonard)]/50 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">

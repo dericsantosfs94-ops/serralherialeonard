@@ -36,7 +36,6 @@ export function Contact() {
 
   return (
     <section id="contato" className="relative py-24 md:py-32 bg-[var(--background)] overflow-hidden">
-      <div className="absolute inset-0 opacity-30 bg-cover bg-center pointer-events-none" style={{ backgroundImage: `url(${IMAGES.textureCharcoal})` }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <div className="flex items-center gap-5 mb-5">

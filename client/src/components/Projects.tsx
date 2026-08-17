@@ -35,7 +35,6 @@ export function Projects() {
 
   return (
     <section id="projetos" className="relative py-24 md:py-32 bg-[var(--paper-green)] overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.08] bg-cover bg-center pointer-events-none" style={{ backgroundImage: `url(${IMAGES.textureEmerald})` }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <span className="eyebrow">Galeria de projetos reais</span>
@@ -80,7 +79,6 @@ export function Projects() {
                     loading="lazy"
                     className={`w-full object-cover ${p.featured ? "h-72" : "h-56"}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.14_0.02_168/0.8)] via-transparent to-transparent opacity-55" />
                   <span className="absolute top-3.5 left-3.5 px-3 py-1 bg-[var(--background)] backdrop-blur border border-[var(--emerald-deep)]/28% text-[0.6rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)] rounded-sm">
                     {catLabel[p.category]}
                   </span>

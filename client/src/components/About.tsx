@@ -10,7 +10,6 @@ import { IMAGES } from "../data/company";
 export function About() {
   return (
     <section id="sobre" className="relative py-24 md:py-32 bg-[var(--background)] overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.08] bg-cover bg-center" style={{ backgroundImage: `url(${IMAGES.textureCharcoal})` }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Eyebrow */}
         <FadeUp>

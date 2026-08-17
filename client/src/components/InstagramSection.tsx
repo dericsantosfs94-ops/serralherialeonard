@@ -12,7 +12,6 @@ import { FadeUp } from "./FadeUp";
 export function InstagramSection() {
   return (
     <section className="relative py-20 md:py-24 bg-[var(--paper-green)] overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.08] bg-cover bg-center pointer-events-none" style={{ backgroundImage: `url(${IMAGES.textureEmerald})` }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <FadeUp className="lg:col-span-6">

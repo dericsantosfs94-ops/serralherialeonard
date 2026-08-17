@@ -74,12 +74,12 @@
   --gold: oklch(0.66 0.12 82);
   --gold-deep: oklch(0.46 0.09 78);
   --gold-soft: oklch(0.77 0.1 88);
-  --gold-tint: oklch(0.95 0.035 88);
+  --gold-tint: oklch(0.965 0.014 90);
   --cream: oklch(0.955 0.012 90);
   --charcoal: oklch(0.2 0.006 70);
   --smoke: oklch(0.48 0.014 150);
-  --paper-muted: oklch(0.925 0.02 90);
-  --paper-green: oklch(0.9 0.045 150);
+  --paper-muted: oklch(0.965 0.014 90);
+  --paper-green: oklch(0.965 0.014 90);
 
   --background: oklch(0.965 0.014 90);
   --foreground: oklch(0.2 0.025 165);
@@ -159,7 +159,7 @@
   }
   .gold-line {
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+    background: var(--gold-soft);
   }
   .gold-corner {
     position: relative;
@@ -198,7 +198,7 @@
     position: absolute;
     inset: 0 0 auto;
     height: 3px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    background: var(--gold);
     opacity: 0.7;
     transition: opacity 0.35s ease, transform 0.45s ease;
     transform: scaleX(0.35);
