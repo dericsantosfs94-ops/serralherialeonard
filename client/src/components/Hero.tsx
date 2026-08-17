@@ -35,7 +35,7 @@ export function Hero() {
             </p>
 
             <div className="mt-7 flex items-center gap-2.5 text-[0.85rem] text-[oklch(0.42_0.018_150)]">
-              <MapPin className="w-4 h-4 text-[var(--gold)] shrink-0" />
+              <MapPin className="w-4 h-4 text-[var(--leonard)] shrink-0" />
               <span>{companyData.address.fullAddress}</span>
             </div>
 
@@ -77,13 +77,13 @@ export function Hero() {
           {/* Card retrato do Leonard */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-[330px] lg:max-w-none lg:mr-0 lg:ml-auto">
-              <div className="absolute -inset-1.5 border border-[var(--gold)/40%] rounded-sm" aria-hidden />
+              <div className="absolute -inset-1.5 border border-[var(--leonard)]/30% rounded-sm" aria-hidden />
               <div className="relative photo-frame rounded-sm bg-[var(--paper-muted)] shadow-[0_24px_70px_rgba(20,44,34,0.16)]">
                 <div className="relative overflow-hidden">
                   <img
                     src={IMAGES.owner}
                     alt="Leonard, fundador da Vidraçaria e Serralheria Leonard"
-                    className="w-full h-[460px] lg:h-[540px] object-cover object-[center_28%]"
+                    className="w-full h-[460px] lg:h-[540px] object-cover object-[center_40%]"
                   />
 
                   {/* Selo fundador */}
@@ -93,11 +93,11 @@ export function Hero() {
                   </div>
                 </div>
 
-                <div className="p-6 border-t border-[var(--gold)/15%]">
+                <div className="p-6 border-t border-[var(--leonard)]/15%">
                   <p className="font-display text-xl md:text-[1.35rem] leading-snug text-[var(--foreground)] italic">
                     "Cada portão e cada vidro que sai da minha oficina leva o meu nome."
                   </p>
-                  <p className="mt-2 text-[0.72rem] tracking-[0.22em] uppercase text-[var(--gold-soft)]">
+                  <p className="mt-2 text-[0.72rem] tracking-[0.22em] uppercase text-[var(--leonard-light)]">
                     Leonard · Vidraçaria e Serralheria
                   </p>
                 </div>

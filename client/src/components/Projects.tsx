@@ -55,8 +55,8 @@ export function Projects() {
                 onClick={() => setSelected(c.id)}
                 className={`px-4.5 py-2.5 text-[0.7rem] font-medium tracking-[0.16em] uppercase rounded-sm border transition-all duration-300 ${
                   selected === c.id
-                    ? "bg-[var(--gold)] border-[var(--gold)] text-[oklch(0.18_0.04_168)]"
-                    : "border-[var(--gold)/28%] text-[var(--foreground)] hover:border-[var(--gold)] hover:text-[var(--emerald-deep)]"
+                    ? "bg-[var(--leonard)] border-[var(--leonard)] text-[oklch(0.18_0.04_168)]"
+                    : "border-[var(--leonard)]/28% text-[var(--foreground)] hover:border-[var(--leonard)] hover:text-[var(--emerald-deep)]"
                 }`}
               >
                 {c.label}

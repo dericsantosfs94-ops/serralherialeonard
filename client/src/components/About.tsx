@@ -9,11 +9,11 @@ import { IMAGES } from "../data/company";
 
 export function About() {
   return (
-    <section id="sobre" className="relative py-24 md:py-32 bg-[var(--background)] overflow-hidden">
+    <section id="sobre" className="relative pt-10 pb-24 md:pt-14 md:pb-32 bg-[var(--background)] overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Eyebrow */}
         <FadeUp>
-          <div className="flex items-center gap-5 mb-14">
+          <div className="flex items-center gap-5 mb-10 md:mb-12">
             <span className="gold-line flex-1" />
             <span className="eyebrow">Nossa história e compromisso</span>
             <span className="gold-line flex-1" />
@@ -28,10 +28,10 @@ export function About() {
                 <img
                   src={IMAGES.loja}
                   alt="Fachada da loja da Leonard em Fragoso, Magé"
-                  className="w-full aspect-video object-cover"
+                  className="w-full aspect-video object-cover object-[center_62%]"
                 />
               </div>
-              <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)]">Nossa loja · Fragoso, Magé - RJ</p>
+              <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)]">Nossa loja · registro histórico · Fragoso, Magé - RJ</p>
             </FadeUp>
           </div>
 
@@ -68,7 +68,7 @@ export function About() {
               ].map((f, i) => (
                 <FadeUp key={f.t} delay={i * 70}>
                   <div className="flex items-start gap-3.5 p-4.5 bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/12% rounded-sm hover:border-[var(--emerald-deep)]/28% transition-colors duration-300">
-                    <f.icon className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
+                    <f.icon className="w-5 h-5 text-[var(--leonard)] shrink-0 mt-0.5" />
                     <div>
                       <h3 className="text-[0.92rem] font-semibold text-[var(--foreground)]">{f.t}</h3>
                       <p className="mt-1 text-[0.82rem] text-[var(--muted-foreground)] leading-relaxed">{f.d}</p>

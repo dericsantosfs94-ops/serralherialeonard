@@ -27,8 +27,8 @@ export interface PortfolioItem {
 }
 
 export const IMAGES = {
-  owner: "/assets/obras/5174908402084285518.jpg",
-  loja: "/assets/obras/foto_1.jpg",
+  owner: "/assets/brand/fundador-retrato.jpg",
+  loja: "/assets/brand/fachada-historica.jpg",
   foto2: "/assets/obras/foto_2.jpg",
   foto3: "/assets/obras/foto_3.jpg",
   foto4: "/assets/obras/foto_4.jpg",
@@ -56,7 +56,7 @@ export const IMAGES = {
   foto26: "/assets/obras/foto_26.jpg",
   foto27: "/assets/obras/foto_27.jpg",
   foto28: "/assets/obras/foto_28.jpg",
-  logo: "/assets/logo.png",
+  logo: "/assets/logo-512.png",
   textureEmerald: "/assets/texture_emerald_preview.png",
   textureCharcoal: "/assets/texture_charcoal_preview.png",
 } as const;
