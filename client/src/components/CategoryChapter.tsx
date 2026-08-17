@@ -82,7 +82,7 @@ export function CategoryChapter({
             <button onClick={() => setActive(big)} className="group block w-full text-left" aria-label={`Ver detalhes do projeto ${big.title}`}>
               <div className="photo-frame gold-corner rounded-sm overflow-hidden bg-[var(--paper-muted)]">
                 <div className="relative">
-                  <img src={big.image} alt={big.title} className="w-full h-[300px] sm:h-[420px] object-cover" />
+                  <img src={big.image} alt={big.title} style={{ objectPosition: big.objectPosition ?? "center" }} className="w-full h-[300px] sm:h-[420px] object-cover" />
                   <span className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--background)] backdrop-blur border border-[var(--emerald-deep)]/28% text-[0.6rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)] rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Ver detalhes <ArrowRight className="w-3 h-3" />
                   </span>
@@ -101,7 +101,7 @@ export function CategoryChapter({
               <FadeUp key={it.id} delay={i * 90}>
                 <button onClick={() => setActive(it)} className="group block w-full text-left" aria-label={`Ver detalhes do projeto ${it.title}`}>
                   <div className="photo-frame rounded-sm overflow-hidden bg-[var(--paper-muted)]">
-                    <img src={it.image} alt={it.title} className="w-full h-[190px] sm:h-[200px] object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src={it.image} alt={it.title} style={{ objectPosition: it.objectPosition ?? "center" }} className="w-full h-[190px] sm:h-[200px] object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>
                   <p className="mt-2.5 text-[0.8rem] font-medium text-[var(--foreground)] group-hover:text-[var(--emerald-deep)] transition-colors">{it.title}</p>
                   <p className="text-[0.75rem] text-[var(--muted-foreground)]">{it.description}</p>
@@ -129,7 +129,7 @@ export function CategoryChapter({
             >
               <X className="w-4 h-4" />
             </button>
-            <img src={active.image} alt={active.title} className="w-full h-full object-cover max-h-[50svh] md:max-h-[90svh]" />
+            <img src={active.image} alt={active.title} style={{ objectPosition: active.objectPosition ?? "center" }} className="w-full h-full object-cover max-h-[50svh] md:max-h-[90svh]" />
             <div className="p-8 flex flex-col">
               <span className="eyebrow">{catLabel[active.category] ?? active.category}</span>
               <h3 className="mt-3 font-display text-[1.8rem] leading-tight font-semibold text-[var(--foreground)]">{active.title}</h3>

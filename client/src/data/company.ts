@@ -22,6 +22,7 @@ export interface PortfolioItem {
   category: "portoes" | "vidros" | "coberturas" | "esquadrias" | "bastidores" | "fachada";
   image: string;
   description: string;
+  objectPosition?: string;
   featured?: boolean;
 }
 
@@ -225,29 +226,32 @@ export const companyData: {
     // ---- PORTÕES (CURADORIA FINAL) ----
     {
       id: "portao-pivota-preto",
-      title: "Portão Pivotante Preto com Faixa Inox Dourada",
+      title: "Portão Preto com Lâminas e Entrada Social",
       location: "Magé - RJ",
       category: "portoes",
-      image: "/assets/obras/foto_18.jpg",
-      description: "Portão pivotante em alumínio preto com faixa inox dourada vertical e abertura automatizada. Projeto premium entregue do projeto à instalação.",
+      image: "/assets/portoes/portao-preto-impacto.jpg",
+      objectPosition: "center 52%",
+      description: "Portão de correr e entrada social em aço preto, com desenho horizontal, presença marcante e acabamento seguro para a fachada.",
       featured: true,
     },
     {
       id: "portao-basculante-preto",
-      title: "Portão Basculante Preto com Faixa Inox",
+      title: "Portão Branco com Lâminas Horizontais",
       location: "Magé - RJ",
       category: "portoes",
-      image: "/assets/obras/foto_17.jpg",
-      description: "Portão basculante preto com detalhes em inox e portão de pedestre integrado, fabricação, pintura e instalação completas.",
+      image: "/assets/portoes/portao-branco-slats.jpg",
+      objectPosition: "center 52%",
+      description: "Portão branco de lâminas horizontais, com ventilação, privacidade e acabamento limpo para valorizar a entrada da residência.",
       featured: true,
     },
     {
       id: "portao-branco-laminas",
-      title: "Portão de Correr Branco com Lâminas",
+      title: "Portão Branco de Garagem com Porta Social",
       location: "Magé - RJ",
       category: "portoes",
-      image: "/assets/obras/foto_19.jpg",
-      description: "Portão de correr em alumínio branco com lâminas horizontais, moderno, ventilado e de baixa manutenção. Acabamento profissional e durável.",
+      image: "/assets/portoes/portao-branco-garagem.jpg",
+      objectPosition: "center 48%",
+      description: "Portão branco de garagem com porta social integrada, linhas horizontais e composição funcional para uso diário.",
     },
     // ---- VIDROS & ESQUADRIAS ----
     {
