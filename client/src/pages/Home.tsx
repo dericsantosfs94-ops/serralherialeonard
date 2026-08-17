@@ -14,6 +14,7 @@ import { InstagramSection } from "../components/InstagramSection";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { FloatingWhatsApp } from "../components/FloatingWhatsApp";
+import { ProjectRibbon } from "../components/ProjectRibbon";
 import { companyData, IMAGES } from "../data/company";
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <ProjectRibbon />
         <About />
         <CategoryChapter
           anchor="portoes"
