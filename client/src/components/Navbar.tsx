@@ -38,8 +38,8 @@ export function Navbar() {
         <a href="#inicio" className="flex items-center gap-3 group">
           <img
             src={IMAGES.logo}
-            alt="Logotipo Leonard"
-            className="w-11 h-11 md:w-12 md:h-12 object-contain drop-shadow-[0_0_12px_rgba(201,162,39,0.25)]"
+            alt="Logotipo LS Leonard"
+            className="w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_0_14px_rgba(46,158,68,0.2)] transition-transform duration-300 group-hover:scale-[1.04]"
           />
           <span className="flex flex-col leading-none">
             <span className="font-display text-[1.25rem] md:text-[1.35rem] font-semibold tracking-[0.18em] text-[var(--cream)]">

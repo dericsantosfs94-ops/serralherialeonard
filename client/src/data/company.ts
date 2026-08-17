@@ -55,7 +55,7 @@ export const IMAGES = {
   foto26: "/assets/obras/foto_26.jpg",
   foto27: "/assets/obras/foto_27.jpg",
   foto28: "/assets/obras/foto_28.jpg",
-  logo: "/assets/logo_leonard.svg",
+  logo: "/assets/logo.png",
   textureEmerald: "/assets/texture_emerald_preview.png",
   textureCharcoal: "/assets/texture_charcoal_preview.png",
 } as const;

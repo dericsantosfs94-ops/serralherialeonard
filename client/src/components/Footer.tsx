@@ -30,7 +30,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3">
-              <img src={IMAGES.logo} alt="Logotipo Leonard" className="w-12 h-12 object-contain" />
+              <img src={IMAGES.logo} alt="Logotipo LS Leonard" className="w-12 h-12 object-contain" />
               <span className="flex flex-col leading-none">
                 <span className="font-display text-[1.3rem] font-semibold tracking-[0.18em] text-[var(--cream)]">LEONARD</span>
                 <span className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-[var(--gold-soft)]">Vidraçaria &amp; Serralheria</span>
