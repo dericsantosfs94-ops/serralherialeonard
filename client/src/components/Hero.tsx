@@ -10,15 +10,11 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[100svh] flex items-center pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden"
+      className="relative min-h-[100svh] flex items-center pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-[var(--background)]"
     >
-      {/* Textura esmeralda */}
-      <div
-        className="absolute inset-0 opacity-60 bg-cover bg-center"
-        style={{ backgroundImage: `url(${IMAGES.textureEmerald})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.13_0.04_168/0.55)] via-transparent to-[oklch(0.17_0.045_168)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,oklch(0.86_0.055_150/0.32),transparent_34%),linear-gradient(135deg,oklch(0.985_0.008_90),oklch(0.945_0.018_90))]" />
       <div className="absolute -top-24 -right-32 w-[480px] h-[480px] rounded-full bg-[var(--leonard)]/10 blur-[120px]" />
+      <div className="absolute left-0 bottom-0 h-px w-2/3 bg-gradient-to-r from-[var(--leonard)]/50 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
@@ -29,19 +25,19 @@ export function Hero() {
               <span className="eyebrow">+30 anos de tradição em Magé - RJ</span>
             </div>
 
-            <h1 className="font-display text-[2.6rem] leading-[1.05] sm:text-[3.6rem] md:text-[4.4rem] font-semibold text-[var(--cream)]">
+            <h1 className="font-display text-[2.6rem] leading-[1.05] sm:text-[3.6rem] md:text-[4.4rem] font-semibold text-[var(--foreground)]">
               Ferro, alumínio e vidro
               <br />
-              com a <em className="text-[var(--gold-soft)] not-italic font-medium">assinatura</em> de quem faz há três décadas.
+              com a <em className="text-[var(--emerald-deep)] not-italic font-medium">assinatura</em> de quem faz há três décadas.
             </h1>
 
-            <p className="mt-6 text-[1.02rem] sm:text-[1.12rem] text-[oklch(0.82_0.012_90)] leading-relaxed max-w-xl font-light">
+            <p className="mt-6 text-[1.02rem] sm:text-[1.12rem] text-[oklch(0.38_0.018_150)] leading-relaxed max-w-xl font-light">
               Portões, coberturas de vidro, esquadrias e box sob medida —
               fabricados e instalados pela equipe da Leonard em Fragoso e toda a
               região de Magé.
             </p>
 
-            <div className="mt-7 flex items-center gap-2.5 text-[0.85rem] text-[var(--smoke)]">
+            <div className="mt-7 flex items-center gap-2.5 text-[0.85rem] text-[oklch(0.42_0.018_150)]">
               <MapPin className="w-4 h-4 text-[var(--gold)] shrink-0" />
               <span>{companyData.address.fullAddress}</span>
             </div>
@@ -58,25 +54,25 @@ export function Hero() {
               </a>
               <a
                 href="#portoes"
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 border border-[var(--gold)/35%] text-[var(--cream)] hover:border-[var(--gold)] hover:text-[var(--gold-soft)] font-medium tracking-[0.08em] uppercase text-sm rounded-sm transition-all duration-300 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 border border-[var(--emerald-deep)]/35 text-[var(--emerald-ink)] hover:border-[var(--emerald-deep)] hover:text-[var(--leonard-dark)] font-medium tracking-[0.08em] uppercase text-sm rounded-sm transition-all duration-300 active:scale-[0.97]"
               >
                 Ver projetos reais
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
 
-            <div className="mt-14 grid grid-cols-3 gap-6 border-t border-[var(--gold)/15%] pt-8 max-w-xl">
+            <div className="mt-14 grid grid-cols-3 gap-6 border-t border-[var(--emerald-deep)]/15 pt-8 max-w-xl">
               <div>
-                <span className="font-display text-3xl md:text-4xl font-semibold text-[var(--cream)]">30+</span>
-                <span className="block mt-1 text-[0.72rem] tracking-[0.14em] uppercase text-[var(--smoke)]">Anos de história</span>
+                <span className="font-display text-3xl md:text-4xl font-semibold text-[var(--foreground)]">30+</span>
+                <span className="block mt-1 text-[0.72rem] tracking-[0.14em] uppercase text-[oklch(0.42_0.018_150)]">Anos de história</span>
               </div>
               <div>
-                <span className="font-display text-3xl md:text-4xl font-semibold text-[var(--cream)]">100%</span>
-                <span className="block mt-1 text-[0.72rem] tracking-[0.14em] uppercase text-[var(--smoke)]">Sob medida</span>
+                <span className="font-display text-3xl md:text-4xl font-semibold text-[var(--foreground)]">100%</span>
+                <span className="block mt-1 text-[0.72rem] tracking-[0.14em] uppercase text-[oklch(0.42_0.018_150)]">Sob medida</span>
               </div>
               <div>
-                <span className="font-display text-3xl md:text-4xl font-semibold text-[var(--cream)]">Magé</span>
-                <span className="block mt-1 text-[0.72rem] tracking-[0.14em] uppercase text-[var(--smoke)]">e toda região</span>
+                <span className="font-display text-3xl md:text-4xl font-semibold text-[var(--foreground)]">Magé</span>
+                <span className="block mt-1 text-[0.72rem] tracking-[0.14em] uppercase text-[oklch(0.42_0.018_150)]">e toda região</span>
               </div>
             </div>
           </div>
@@ -95,7 +91,7 @@ export function Hero() {
 
                   {/* Selo fundador */}
                   <div className="absolute top-5 left-5 inline-flex items-center gap-2 px-3.5 py-1.5 bg-[oklch(0.16_0.04_168/0.82)] backdrop-blur-md border border-[var(--gold)/40%] rounded-sm">
-                    <img src={IMAGES.logo} alt="" className="w-5 h-5 object-contain" />
+                    <span className="inline-flex w-7 h-7 items-center justify-center rounded-full bg-[var(--cream)]/95 p-0.5 shadow-sm"><img src={IMAGES.logo} alt="" className="w-full h-full object-contain" /></span>
                     <span className="eyebrow !text-[0.58rem]">Fundador &amp; Mestre Serralheiro</span>
                   </div>
                 </div>

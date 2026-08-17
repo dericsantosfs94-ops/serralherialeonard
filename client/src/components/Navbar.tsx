@@ -30,8 +30,8 @@ export function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[oklch(0.17_0.045_168/0.92)] backdrop-blur-xl border-b border-[var(--gold)/15%] py-3 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
-          : "bg-gradient-to-b from-[oklch(0.13_0.04_168/0.85)] to-transparent py-5"
+          ? "bg-[oklch(0.965_0.014_90/0.94)] backdrop-blur-xl border-b border-[var(--emerald-deep)]/12 py-3 shadow-[0_8px_30px_rgba(20,44,34,0.12)]"
+          : "bg-[oklch(0.965_0.014_90/0.92)] backdrop-blur-sm border-b border-[var(--emerald-deep)]/8 py-4 md:py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -39,13 +39,13 @@ export function Navbar() {
           <img
             src={IMAGES.logo}
             alt="Logotipo LS Leonard"
-            className="w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_0_14px_rgba(46,158,68,0.2)] transition-transform duration-300 group-hover:scale-[1.04]"
+            className="w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_6px_12px_rgba(20,44,34,0.18)] transition-transform duration-300 group-hover:scale-[1.04]"
           />
           <span className="flex flex-col leading-none">
-            <span className="font-display text-[1.25rem] md:text-[1.35rem] font-semibold tracking-[0.18em] text-[var(--cream)]">
+            <span className="font-display text-[1.25rem] md:text-[1.35rem] font-semibold tracking-[0.18em] text-[var(--emerald-ink)]">
               LEONARD
             </span>
-            <span className="mt-1 text-[0.6rem] md:text-[0.65rem] tracking-[0.32em] uppercase text-[var(--gold-soft)] font-medium">
+            <span className="mt-1 text-[0.6rem] md:text-[0.65rem] tracking-[0.32em] uppercase text-[var(--emerald-deep)] font-medium">
               Vidraçaria &amp; Serralheria
             </span>
           </span>
@@ -56,7 +56,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[0.8rem] font-normal tracking-[0.08em] text-[oklch(0.82_0.01_90)] hover:text-[var(--gold-soft)] transition-colors duration-300"
+              className="text-[0.8rem] font-normal tracking-[0.08em] text-[oklch(0.3_0.018_150)] hover:text-[var(--emerald-deep)] transition-colors duration-300"
             >
               {l.name}
             </a>
@@ -66,7 +66,7 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href={`tel:${companyData.whatsappClean}`}
-            className="hidden xl:flex items-center gap-2 text-[0.8rem] text-[oklch(0.82_0.01_90)] hover:text-[var(--cream)] transition-colors"
+            className="hidden xl:flex items-center gap-2 text-[0.8rem] text-[oklch(0.3_0.018_150)] hover:text-[var(--emerald-ink)] transition-colors"
           >
             <Phone className="w-3.5 h-3.5 text-[var(--gold)]" />
             <span className="font-medium">{companyData.phoneDisplay}</span>
@@ -94,7 +94,7 @@ export function Navbar() {
           </a>
           <button
             onClick={() => setIsOpen((v) => !v)}
-            className="p-2.5 text-[var(--cream)] border border-[var(--gold)/25%] rounded-sm"
+            className="p-2.5 text-[var(--emerald-ink)] border border-[var(--emerald-deep)/22%] rounded-sm"
             aria-label="Menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -103,14 +103,14 @@ export function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden absolute top-full inset-x-0 bg-[oklch(0.16_0.045_168/0.98)] backdrop-blur-xl border-b border-[var(--gold)/15%] shadow-2xl py-6 px-6">
+        <div className="lg:hidden absolute top-full inset-x-0 bg-[oklch(0.965_0.014_90/0.98)] backdrop-blur-xl border-b border-[var(--emerald-deep)]/12 shadow-2xl py-6 px-6">
           <nav className="flex flex-col gap-1">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setIsOpen(false)}
-                className="text-sm text-[oklch(0.88_0.01_90)] hover:text-[var(--gold-soft)] py-2.5 border-b border-[oklch(0.72_0.11_85/0.1)] transition-colors"
+                className="text-sm text-[var(--emerald-ink)] hover:text-[var(--emerald-deep)] py-2.5 border-b border-[var(--emerald-deep)]/10 transition-colors"
               >
                 {l.name}
               </a>
