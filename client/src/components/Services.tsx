@@ -26,7 +26,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export function Services() {
   return (
-    <section id="servicos" className="relative py-24 md:py-32 bg-[var(--charcoal)] overflow-hidden">
+    <section id="servicos" className="relative py-24 md:py-32 bg-[var(--background)] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <div className="flex items-center gap-5 mb-5">
@@ -34,10 +34,10 @@ export function Services() {
             <span className="eyebrow">O que fazemos</span>
             <span className="gold-line flex-1" />
           </div>
-          <h2 className="font-display text-[2.2rem] leading-[1.1] sm:text-[3.1rem] font-semibold text-[var(--cream)] text-center">
-            Serviços completos, do projeto ao <span className="text-[var(--gold-soft)]">acabamento</span>
+          <h2 className="font-display text-[2.2rem] leading-[1.1] sm:text-[3.1rem] font-semibold text-[var(--foreground)] text-center">
+            Serviços completos, do projeto ao <span className="text-[var(--emerald-deep)]">acabamento</span>
           </h2>
-          <p className="mt-5 text-center text-[1.05rem] text-[var(--smoke)] font-light max-w-2xl mx-auto">
+          <p className="mt-5 text-center text-[1.05rem] text-[var(--muted-foreground)] font-light max-w-2xl mx-auto">
             Cada serviço é executado pela mesma equipe que fabrica — por isso o
             acabamento final tem a qualidade de quem cuida de ponta a ponta.
           </p>
@@ -48,24 +48,24 @@ export function Services() {
             const msg = `Olá! Vim pelo site da Vidraçaria e Serralheria Leonard e gostaria de solicitar um orçamento para o serviço de *${s.title}*.`;
             return (
               <FadeUp key={s.id} delay={(i % 3) * 70}>
-                <div className="group h-full flex flex-col bg-[oklch(0.22_0.008_70)] border border-[oklch(0.72_0.11_85/0.12%)] rounded-sm p-7 hover:border-[var(--gold)/38%] transition-colors duration-500">
+                <div className="group h-full flex flex-col bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/12% rounded-sm p-7 hover:border-[var(--emerald-deep)]/28% transition-colors duration-500">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 flex items-center justify-center border border-[var(--gold)/30%] text-[var(--gold)] rounded-sm group-hover:bg-[var(--gold)/10%] transition-colors duration-500">
+                    <div className="w-12 h-12 flex items-center justify-center border border-[var(--emerald-deep)]/25% text-[var(--gold)] rounded-sm group-hover:bg-[var(--gold)/10%] transition-colors duration-500">
                       {iconMap[s.iconName] ?? <Wrench className="w-5 h-5" />}
                     </div>
-                    <span className="text-[0.62rem] tracking-[0.25em] uppercase text-[var(--smoke)]/70">
+                    <span className="text-[0.62rem] tracking-[0.25em] uppercase text-[var(--muted-foreground)]/70">
                       {s.category === "aluminio" ? "Alumínio" : s.category === "vidros" ? "Vidros" : s.category === "serralheria" ? "Serralheria" : "Complementares"}
                     </span>
                   </div>
-                  <h3 className="mt-6 font-display text-[1.35rem] font-semibold text-[var(--cream)] group-hover:text-[var(--gold-soft)] transition-colors duration-500">
+                  <h3 className="mt-6 font-display text-[1.35rem] font-semibold text-[var(--foreground)] group-hover:text-[var(--emerald-deep)] transition-colors duration-500">
                     {s.title}
                   </h3>
-                  <p className="mt-3 text-[0.88rem] text-[var(--smoke)] leading-relaxed font-light flex-1">{s.description}</p>
+                  <p className="mt-3 text-[0.88rem] text-[var(--muted-foreground)] leading-relaxed font-light flex-1">{s.description}</p>
                   <a
                     href={`https://wa.me/${companyData.whatsappClean}?text=${encodeURIComponent(msg)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center justify-center gap-2 py-2.5 border border-[oklch(0.72_0.11_85/0.25%)] text-[0.72rem] font-medium tracking-[0.14em] uppercase text-[var(--cream)] hover:bg-[var(--leonard)] hover:border-[var(--leonard)] hover:text-white transition-all duration-300 rounded-sm"
+                    className="mt-6 inline-flex items-center justify-center gap-2 py-2.5 border border-[var(--emerald-deep)]/20% text-[0.72rem] font-medium tracking-[0.14em] uppercase text-[var(--foreground)] hover:bg-[var(--leonard)] hover:border-[var(--leonard)] hover:text-white transition-all duration-300 rounded-sm"
                   >
                     <MessageCircle className="w-3.5 h-3.5" />
                     Orçar este serviço

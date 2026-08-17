@@ -35,7 +35,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contato" className="relative py-24 md:py-32 bg-[var(--charcoal)] overflow-hidden">
+    <section id="contato" className="relative py-24 md:py-32 bg-[var(--background)] overflow-hidden">
       <div className="absolute inset-0 opacity-30 bg-cover bg-center pointer-events-none" style={{ backgroundImage: `url(${IMAGES.textureCharcoal})` }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp>
@@ -44,50 +44,50 @@ export function Contact() {
             <span className="eyebrow">Solicite seu orçamento</span>
             <span className="gold-line flex-1" />
           </div>
-          <h2 className="font-display text-[2.2rem] leading-[1.1] sm:text-[3.1rem] font-semibold text-[var(--cream)] text-center">
-            O orçamento é <span className="text-[var(--gold-soft)]">gratuito</span> — e quem responde é o Leonard.
+          <h2 className="font-display text-[2.2rem] leading-[1.1] sm:text-[3.1rem] font-semibold text-[var(--foreground)] text-center">
+            O orçamento é <span className="text-[var(--emerald-deep)]">gratuito</span> — e quem responde é o Leonard.
           </h2>
         </FadeUp>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Formulário */}
           <div className="lg:col-span-7">
-            <form onSubmit={submit} className="bg-[oklch(0.22_0.008_70)] border border-[var(--gold)/15%] rounded-sm p-8 md:p-10">
+            <form onSubmit={submit} className="bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/15% rounded-sm p-8 md:p-10">
               <div className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-[0.7rem] tracking-[0.2em] uppercase text-[var(--gold-soft)] mb-2.5">Seu nome</label>
+                  <label htmlFor="name" className="block text-[0.7rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)] mb-2.5">Seu nome</label>
                   <input
                     id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Como podemos te chamar?"
-                    className="w-full bg-transparent border-b border-[oklch(0.72_0.11_85/0.3)] focus:border-[var(--gold)] outline-none py-3 text-[var(--cream)] placeholder:text-[oklch(0.5_0.005_80)] transition-colors"
+                    className="w-full bg-transparent border-b border-[var(--emerald-deep)]/22% focus:border-[var(--gold)] outline-none py-3 text-[var(--foreground)] placeholder:text-[oklch(0.42_0.018_150)] transition-colors"
                   />
                 </div>
                 <div>
-                  <label htmlFor="service" className="block text-[0.7rem] tracking-[0.2em] uppercase text-[var(--gold-soft)] mb-2.5">Serviço de interesse</label>
+                  <label htmlFor="service" className="block text-[0.7rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)] mb-2.5">Serviço de interesse</label>
                   <select
                     id="service"
                     value={service}
                     onChange={(e) => setService(e.target.value)}
-                    className="w-full bg-[oklch(0.26_0.008_70)] border-b border-[oklch(0.72_0.11_85/0.3)] focus:border-[var(--gold)] outline-none py-3 text-[var(--cream)] transition-colors"
+                    className="w-full bg-[var(--paper-muted)] border-b border-[var(--emerald-deep)]/22% focus:border-[var(--gold)] outline-none py-3 text-[var(--foreground)] transition-colors"
                   >
                     {serviceOptions.map((s) => (
-                      <option key={s} value={s} className="text-[oklch(0.15_0.01_70)]">
+                      <option key={s} value={s} className="text-[var(--foreground)]">
                         {s}
                       </option>
                     ))}
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="note" className="block text-[0.7rem] tracking-[0.2em] uppercase text-[var(--gold-soft)] mb-2.5">Conte sobre seu projeto (opcional)</label>
+                  <label htmlFor="note" className="block text-[0.7rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)] mb-2.5">Conte sobre seu projeto (opcional)</label>
                   <textarea
                     id="note"
                     value={note}
                     onChange={(e) => setNote(e.target.value)}
                     placeholder="Ex.: medidas aproximadas, material preferido, endereço da obra..."
                     rows={4}
-                    className="w-full bg-transparent border-b border-[oklch(0.72_0.11_85/0.3)] focus:border-[var(--gold)] outline-none py-3 text-[var(--cream)] placeholder:text-[oklch(0.5_0.005_80)] transition-colors resize-none"
+                    className="w-full bg-transparent border-b border-[var(--emerald-deep)]/22% focus:border-[var(--gold)] outline-none py-3 text-[var(--foreground)] placeholder:text-[oklch(0.42_0.018_150)] transition-colors resize-none"
                   />
                 </div>
                 <button
@@ -97,7 +97,7 @@ export function Contact() {
                   <MessageCircle className="w-5 h-5" />
                   Enviar orçamento pelo WhatsApp
                 </button>
-                <p className="text-center text-[0.75rem] text-[var(--smoke)]">
+                <p className="text-center text-[0.75rem] text-[var(--muted-foreground)]">
                   Ao enviar, seu WhatsApp abre com a mensagem pronta para o Leonard.
                 </p>
               </div>
@@ -106,35 +106,35 @@ export function Contact() {
 
           {/* Info + Mapa */}
           <div className="lg:col-span-5 flex flex-col gap-6">
-            <div className="bg-[oklch(0.22_0.008_70)] border border-[var(--gold)/15%] rounded-sm p-8">
+            <div className="bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/15% rounded-sm p-8">
               <h3 className="eyebrow mb-6">Fale com a gente</h3>
               <div className="space-y-5">
                 <a href={`tel:${companyData.whatsappClean}`} className="flex items-start gap-4 group">
                   <Phone className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
-                  <span className="text-[0.95rem] text-[var(--cream)] group-hover:text-[var(--gold-soft)] transition-colors">{companyData.phoneDisplay}</span>
+                  <span className="text-[0.95rem] text-[var(--foreground)] group-hover:text-[var(--emerald-deep)] transition-colors">{companyData.phoneDisplay}</span>
                 </a>
                 <a href={companyData.whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
                   <MessageCircle className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
-                  <span className="text-[0.95rem] text-[var(--cream)] group-hover:text-[var(--gold-soft)] transition-colors">WhatsApp · {companyData.whatsapp}</span>
+                  <span className="text-[0.95rem] text-[var(--foreground)] group-hover:text-[var(--emerald-deep)] transition-colors">WhatsApp · {companyData.whatsapp}</span>
                 </a>
                 <a href={`mailto:${companyData.email}`} className="flex items-start gap-4 group">
                   <Mail className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
-                  <span className="text-[0.95rem] text-[var(--cream)] group-hover:text-[var(--gold-soft)] transition-colors break-all">{companyData.email}</span>
+                  <span className="text-[0.95rem] text-[var(--foreground)] group-hover:text-[var(--emerald-deep)] transition-colors break-all">{companyData.email}</span>
                 </a>
                 <a href={companyData.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
                   <Instagram className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
-                  <span className="text-[0.95rem] text-[var(--cream)] group-hover:text-[var(--gold-soft)] transition-colors">{companyData.instagramHandle}</span>
+                  <span className="text-[0.95rem] text-[var(--foreground)] group-hover:text-[var(--emerald-deep)] transition-colors">{companyData.instagramHandle}</span>
                 </a>
                 <div className="flex items-start gap-4">
                   <MapPin className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[0.95rem] text-[var(--cream)]">{companyData.address.street}, {companyData.address.number} - {companyData.address.km}</p>
-                    <p className="text-[0.85rem] text-[var(--smoke)]">{companyData.address.neighborhood} · {companyData.address.city} - {companyData.address.state}</p>
+                    <p className="text-[0.95rem] text-[var(--foreground)]">{companyData.address.street}, {companyData.address.number} - {companyData.address.km}</p>
+                    <p className="text-[0.85rem] text-[var(--muted-foreground)]">{companyData.address.neighborhood} · {companyData.address.city} - {companyData.address.state}</p>
                     <a
                       href={companyData.address.googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-2 inline-flex items-center gap-2 text-[0.72rem] tracking-[0.14em] uppercase text-[var(--gold-soft)] hover:text-[var(--gold)] transition-colors"
+                      className="mt-2 inline-flex items-center gap-2 text-[0.72rem] tracking-[0.14em] uppercase text-[var(--emerald-deep)] hover:text-[var(--gold)] transition-colors"
                     >
                       Abrir no Google Maps <ExternalLink className="w-3 h-3" />
                     </a>
@@ -143,7 +143,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="photo-frame rounded-sm overflow-hidden border border-[var(--gold)/15%] min-h-[260px]">
+            <div className="photo-frame rounded-sm overflow-hidden border border-[var(--emerald-deep)]/15% min-h-[260px]">
               <iframe
                 src="https://maps.google.com/maps?q=Av.+Automovel+Club+2641+Fragoso+Mage+RJ&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-[260px] border-0 grayscale-[0.4] contrast-[1.02]"

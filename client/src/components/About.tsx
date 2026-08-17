@@ -9,8 +9,8 @@ import { IMAGES } from "../data/company";
 
 export function About() {
   return (
-    <section id="sobre" className="relative py-24 md:py-32 bg-[var(--charcoal)] overflow-hidden">
-      <div className="absolute inset-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: `url(${IMAGES.textureCharcoal})` }} />
+    <section id="sobre" className="relative py-24 md:py-32 bg-[var(--background)] overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.08] bg-cover bg-center" style={{ backgroundImage: `url(${IMAGES.textureCharcoal})` }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Eyebrow */}
         <FadeUp>
@@ -25,34 +25,34 @@ export function About() {
           {/* Foto única da loja */}
           <div className="lg:col-span-5">
             <FadeUp>
-              <div className="photo-frame gold-corner rounded-sm overflow-hidden bg-[oklch(0.16_0.006_70)] border border-[oklch(0.72_0.11_85/0.15%)]">
+              <div className="photo-frame gold-corner rounded-sm overflow-hidden bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/15%">
                 <img
                   src={IMAGES.loja}
                   alt="Fachada da loja da Leonard em Fragoso, Magé"
                   className="w-full aspect-video object-cover"
                 />
               </div>
-              <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--gold-soft)]">Nossa loja · Fragoso, Magé - RJ</p>
+              <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)]">Nossa loja · Fragoso, Magé - RJ</p>
             </FadeUp>
           </div>
 
           {/* Texto */}
           <div className="lg:col-span-7 lg:pl-6">
             <FadeUp>
-              <h2 className="font-display text-[2.2rem] leading-[1.12] sm:text-[3rem] font-semibold text-[var(--cream)]">
+              <h2 className="font-display text-[2.2rem] leading-[1.12] sm:text-[3rem] font-semibold text-[var(--foreground)]">
                 Três décadas fazendo o que amamos,
                 <br />
-                <span className="text-[var(--gold-soft)]">no bairro onde crescemos.</span>
+                <span className="text-[var(--emerald-deep)]">no bairro onde crescemos.</span>
               </h2>
             </FadeUp>
             <FadeUp delay={80}>
-              <p className="mt-6 text-[1rem] md:text-[1.08rem] leading-relaxed text-[oklch(0.8_0.01_85)] font-light">
-                A <strong className="font-semibold text-[var(--cream)] font-normal">Vidraçaria e Serralheria Leonard</strong> nasceu e cresceu em
+              <p className="mt-6 text-[1rem] md:text-[1.08rem] leading-relaxed text-[oklch(0.38_0.018_150)] font-light">
+                A <strong className="font-semibold text-[var(--foreground)] font-normal">Vidraçaria e Serralheria Leonard</strong> nasceu e cresceu em
                 Fragoso, Magé. Há mais de 30 anos, Leonard e sua equipe transformam
                 ferro, alumínio e vidro em portões, coberturas, esquadrias e
                 soluções sob medida — com acabamento cuidadoso em cada projeto.
               </p>
-              <p className="mt-4 text-[1rem] md:text-[1.08rem] leading-relaxed text-[oklch(0.68_0.008_80)] font-light">
+              <p className="mt-4 text-[1rem] md:text-[1.08rem] leading-relaxed text-[oklch(0.46_0.015_150)] font-light">
                 Atendemos residências, comércios e obras em toda a região de
                 Magé - RJ, do orçamento ao acabamento final. Todas as fotos
                 deste site são de projetos reais, fabricados e instalados pela
@@ -68,11 +68,11 @@ export function About() {
                 { icon: ShieldCheck, t: "Garantia de execução", d: "Fabricação, pintura e instalação com acabamento refinado." },
               ].map((f, i) => (
                 <FadeUp key={f.t} delay={i * 70}>
-                  <div className="flex items-start gap-3.5 p-4.5 bg-[oklch(0.24_0.008_70)] border border-[var(--gold)/12%] rounded-sm hover:border-[var(--gold)/35%] transition-colors duration-300">
+                  <div className="flex items-start gap-3.5 p-4.5 bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/12% rounded-sm hover:border-[var(--emerald-deep)]/28% transition-colors duration-300">
                     <f.icon className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="text-[0.92rem] font-semibold text-[var(--cream)]">{f.t}</h3>
-                      <p className="mt-1 text-[0.82rem] text-[var(--smoke)] leading-relaxed">{f.d}</p>
+                      <h3 className="text-[0.92rem] font-semibold text-[var(--foreground)]">{f.t}</h3>
+                      <p className="mt-1 text-[0.82rem] text-[var(--muted-foreground)] leading-relaxed">{f.d}</p>
                     </div>
                   </div>
                 </FadeUp>

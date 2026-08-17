@@ -81,7 +81,7 @@ export function Hero() {
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-[330px] lg:max-w-none lg:mr-0 lg:ml-auto">
               <div className="absolute -inset-1.5 border border-[var(--gold)/40%] rounded-sm" aria-hidden />
-              <div className="relative photo-frame rounded-sm bg-[var(--charcoal)] shadow-[0_24px_70px_rgba(0,0,0,0.55)]">
+              <div className="relative photo-frame rounded-sm bg-[var(--paper-muted)] shadow-[0_24px_70px_rgba(20,44,34,0.16)]">
                 <div className="relative overflow-hidden">
                   <img
                     src={IMAGES.owner}
@@ -90,14 +90,14 @@ export function Hero() {
                   />
 
                   {/* Selo fundador */}
-                  <div className="absolute top-5 left-5 inline-flex items-center gap-2 px-3.5 py-1.5 bg-[oklch(0.16_0.04_168/0.82)] backdrop-blur-md border border-[var(--gold)/40%] rounded-sm">
+                  <div className="absolute top-5 left-5 inline-flex items-center gap-2 px-3.5 py-1.5 bg-[var(--paper-green)]/95 backdrop-blur-md border border-[var(--emerald-deep)]/20 rounded-sm">
                     <span className="inline-flex w-7 h-7 items-center justify-center rounded-full bg-[var(--cream)]/95 p-0.5 shadow-sm"><img src={IMAGES.logo} alt="" className="w-full h-full object-contain" /></span>
                     <span className="eyebrow !text-[0.58rem]">Fundador &amp; Mestre Serralheiro</span>
                   </div>
                 </div>
 
                 <div className="p-6 border-t border-[var(--gold)/15%]">
-                  <p className="font-display text-xl md:text-[1.35rem] leading-snug text-[var(--cream)] italic">
+                  <p className="font-display text-xl md:text-[1.35rem] leading-snug text-[var(--foreground)] italic">
                     "Cada portão e cada vidro que sai da minha oficina leva o meu nome."
                   </p>
                   <p className="mt-2 text-[0.72rem] tracking-[0.22em] uppercase text-[var(--gold-soft)]">

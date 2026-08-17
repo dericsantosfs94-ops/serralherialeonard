@@ -25,18 +25,18 @@ const nav = [
 
 export function Footer() {
   return (
-    <footer className="relative bg-[oklch(0.13_0.035_168)] border-t border-[var(--gold)/15%] pt-16 pb-8">
+    <footer className="relative bg-[var(--background)] border-t border-[var(--emerald-deep)]/15% pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3">
               <img src={IMAGES.logo} alt="Logotipo LS Leonard" className="w-12 h-12 object-contain" />
               <span className="flex flex-col leading-none">
-                <span className="font-display text-[1.3rem] font-semibold tracking-[0.18em] text-[var(--cream)]">LEONARD</span>
-                <span className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-[var(--gold-soft)]">Vidraçaria &amp; Serralheria</span>
+                <span className="font-display text-[1.3rem] font-semibold tracking-[0.18em] text-[var(--foreground)]">LEONARD</span>
+                <span className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-[var(--emerald-deep)]">Vidraçaria &amp; Serralheria</span>
               </span>
             </div>
-            <p className="mt-5 text-[0.88rem] text-[var(--smoke)] leading-relaxed font-light max-w-xs">
+            <p className="mt-5 text-[0.88rem] text-[var(--muted-foreground)] leading-relaxed font-light max-w-xs">
               Há mais de 30 anos fabricando e instalando portões, vidros,
               esquadrias e coberturas sob medida em Fragoso, Magé - RJ.
             </p>
@@ -56,7 +56,7 @@ export function Footer() {
             <ul className="space-y-3">
               {nav.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-[0.88rem] text-[oklch(0.75_0.008_85)] hover:text-[var(--gold-soft)] transition-colors">
+                  <a href={l.href} className="text-[0.88rem] text-[oklch(0.4_0.018_150)] hover:text-[var(--emerald-deep)] transition-colors">
                     {l.name}
                   </a>
                 </li>
@@ -69,7 +69,7 @@ export function Footer() {
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s}>
-                  <span className="text-[0.88rem] text-[oklch(0.75_0.008_85)]">{s}</span>
+                  <span className="text-[0.88rem] text-[oklch(0.4_0.018_150)]">{s}</span>
                 </li>
               ))}
             </ul>
@@ -80,14 +80,14 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[var(--gold)] shrink-0 mt-1" />
-                <span className="text-[0.88rem] text-[oklch(0.75_0.008_85)]">{companyData.phoneDisplay}</span>
+                <span className="text-[0.88rem] text-[oklch(0.4_0.018_150)]">{companyData.phoneDisplay}</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[var(--gold)] shrink-0 mt-1" />
-                <span className="text-[0.88rem] text-[oklch(0.75_0.008_85)]">{companyData.address.fullAddress}</span>
+                <span className="text-[0.88rem] text-[oklch(0.4_0.018_150)]">{companyData.address.fullAddress}</span>
               </li>
               <li>
-                <a href={companyData.instagramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[0.88rem] text-[oklch(0.75_0.008_85)] hover:text-[var(--gold-soft)] transition-colors">
+                <a href={companyData.instagramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[0.88rem] text-[oklch(0.4_0.018_150)] hover:text-[var(--emerald-deep)] transition-colors">
                   <Instagram className="w-4 h-4" />
                   {companyData.instagramHandle}
                 </a>
@@ -96,11 +96,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-[var(--gold)/12%] flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[0.72rem] tracking-[0.1em] text-[oklch(0.55_0.006_80)]">
+        <div className="mt-14 pt-6 border-t border-[var(--emerald-deep)]/12% flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-[0.72rem] tracking-[0.1em] text-[oklch(0.5_0.014_150)]">
             © {new Date().getFullYear()} Vidraçaria e Serralheria Leonard · CNPJ e razão social em conformidade
           </p>
-          <p className="text-[0.72rem] tracking-[0.1em] text-[oklch(0.55_0.006_80)]">
+          <p className="text-[0.72rem] tracking-[0.1em] text-[oklch(0.5_0.014_150)]">
             Fabricado com orgulho em Fragoso, Magé - RJ
           </p>
         </div>
