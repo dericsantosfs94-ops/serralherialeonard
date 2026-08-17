@@ -27,11 +27,11 @@ export function About() {
               <div className="photo-frame gold-corner rounded-sm overflow-hidden bg-[var(--paper-muted)] border border-[var(--emerald-deep)]/15%">
                 <img
                   src={IMAGES.loja}
-                  alt="Fachada da loja da Leonard em Fragoso, Magé"
-                  className="w-full aspect-video object-cover object-[center_62%]"
+                  alt="Fachada atual da loja da Leonard em Fragoso, Magé"
+                  className="w-full aspect-[4/5] object-cover object-[center_40%]"
                 />
               </div>
-              <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)]">Nossa loja · registro histórico · Fragoso, Magé - RJ</p>
+              <p className="mt-2.5 text-[0.68rem] tracking-[0.2em] uppercase text-[var(--emerald-deep)]">Nossa loja · Fragoso, Magé - RJ</p>
             </FadeUp>
           </div>
 

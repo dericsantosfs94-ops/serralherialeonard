@@ -28,7 +28,7 @@ export interface PortfolioItem {
 
 export const IMAGES = {
   owner: "/assets/brand/fundador-retrato.jpg",
-  loja: "/assets/brand/fachada-historica.jpg",
+  loja: "/assets/brand/fachada-atual.jpg",
   foto2: "/assets/obras/foto_2.jpg",
   foto3: "/assets/obras/foto_3.jpg",
   foto4: "/assets/obras/foto_4.jpg",
